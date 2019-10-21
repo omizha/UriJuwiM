@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
+    "serve": "vue-cli-service serve --host 0.0.0.0 --public maemesoft.iptime.org:8080 --disableHostCheck true",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
@@ -37,7 +37,9 @@
       "plugin:vue/essential",
       "@vue/standard"
     ],
-    "rules": {},
+    "rules": {
+      "indent": [ "error", 4 ]
+    },
     "parserOptions": {
       "parser": "babel-eslint"
     }
