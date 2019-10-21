@@ -1,24 +1,32 @@
 <template>
     <div id="app">
         <router-view></router-view>
-        <el-row>
-            <router-link to="/"><button>홈</button></router-link>
-            <router-link to="/"><button>???</button></router-link>
-            <router-link to="/search"><button>검색</button></router-link>
-            <router-link to="/map_view"><button>지도</button></router-link>
-        </el-row>
+        <Nav></Nav>
     </div>
 </template>
 
 <script>
+
+import Nav from './views/Nav.vue'
+
 export default {
+
     name: 'app',
     components: {
+        Nav
     }
 }
 </script>
 
 <style>
+html, body {
+    width :100%;
+    height : 100%;
+    overflow: hidden;
+
+    text-decoration: none !important;
+}
+
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
