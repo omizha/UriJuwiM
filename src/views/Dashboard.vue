@@ -7,13 +7,27 @@
             </div>
         </el-collapse-transition>
         <el-collapse-transition>
-            <div class='plates' v-show="!placeload">
-                <div v-for="item in db.data" :key="item.Location" v-on:click="switchview(item)">
-                    <el-image style="max-height: 200px; max-width: 200px" :src="item.url"></el-image>
-                    <p>{{ item.Location }}</p>
-                </div>
+<!--            <div class='plates' v-show="!placeload">-->
+<!--                <div style='float: top' v-for="item in db.data" :key="item.Location" v-on:click="switchview(item)">-->
+<!--                    <el-card style="max-width: 300px; max-height: 300px" :src="item.url"></el-card>-->
+<!--                    <p>{{ item.Location }}</p>-->
+<!--                </div>-->
+<!--                -->
+<!--            </div>-->
+            <el-row class='plates' v-show="!placeload">
+                <el-col :span="12" v-for="item in db.data" :key="item.Location" style='float: top'>
+                    <el-card :body-style="{ padding: '0px' }">
+                        <img :src="item.url" style="max-height: 400px" v-on:click="switchview(item)">
+                        <div style="padding: 20px;">
+                            <span>{{ item.location }}</span>
+                            <div class="bottom clearfix">
+                                <time class="time">{{ item.Address }}</time>
+                            </div>
+                        </div>
+                    </el-card>
+                </el-col>
                 <div class="el-scrollbar__bar is-vertical"></div>
-            </div>
+            </el-row>
         </el-collapse-transition>
         <el-collapse-transition>
             <div class="infobox" v-if='placeload'>
@@ -59,6 +73,8 @@ export default {
         max-height: 20%;
     }
     .plates {
+        /*margin: auto;*/
+        margin-bottom: 100px;
         overflow-y: auto;
         overflow-x: hidden;
     }
