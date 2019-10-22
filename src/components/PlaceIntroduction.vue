@@ -14,28 +14,28 @@
                 </div>
                 <div>
                     <div class="brief">
-                        <img src="good_condition.jpg" class="conditions">
+                        <nice class="conditions"/>
                         <div class="sorttext">
                             <p class="keyword">{{ info.PlaceDescription.PhotoTime[1] }}</p>
                             <p class="description">{{ info.PlaceDescription.PhotoTime[2] }}</p>
                         </div>
                     </div>
                     <div class="brief">
-                        <img src="bad_condition.jpg" class="conditions">
+                        <bad class="conditions"/>
                         <div class="sorttext">
                             <p class="keyword">{{ info.PlaceDescription.NotRecommandTime[0] }}</p>
                             <p class="description">{{ info.PlaceDescription.NotRecommandTime[1] }}</p>
                         </div>
                     </div>
                     <div class="brief">
-                        <img src="cam.jpg" class="conditions">
+                        <camera class="conditions"/>
                         <div class="sorttext">
                             <p class="keyword">{{ info.PlaceDescription.OtherTips[0] }}</p>
                             <p class="description">{{ info.PlaceDescription.OtherTips[1] }}</p>
                         </div>
                     </div>
                     <div class="brief">
-                        <img src="cloth.jpg" class="conditions">
+                        <cloth class="conditions"/>
                         <div class="sorttext">
                             <p class="keyword">{{ info.PlaceDescription.RecommandClothes[0] }}</p>
                             <p class="description">{{ info.PlaceDescription.RecommandClothes[1] }}</p>
@@ -64,9 +64,20 @@
 </template>
 
 <script>
+import nice from '../assets/svg/ic_time_daytime_48px.svg'
+import bad from '../assets/svg/ic_calendar_notsuggest.svg'
+import camera from '../assets/svg/ic_photo_tip.svg'
+import cloth from '../assets/svg/ic_clothes_48px.svg'
+
 export default {
     props: ['info'],
     name: 'PlaceIntroduction',
+    components: {
+        nice,
+        bad,
+        camera,
+        cloth
+    },
     data () {
         return {
             releasephotos: false
@@ -92,8 +103,8 @@ export default {
     margin: auto;
 }
 .conditions {
-    width: 170px;
-    height: 170px;
+    width: 145px;
+    height: 145px;
     float: left;
 }
 .brief {
