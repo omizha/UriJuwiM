@@ -3,7 +3,10 @@
         <div class="upperbox">
             <p>새로운 경험을 할 장소를 찾아보세요!</p>
         </div>
-        <div v-for="item in moc" :key="item.name">{{ item.name }}</div>
+        <div v-for="item in moc" :key="item.name">
+            <img :src="item.thumbnail">
+            <p>{{ item.name }}</p>
+        </div>
     </div>
 </template>
 
