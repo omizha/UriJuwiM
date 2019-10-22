@@ -1,5 +1,5 @@
 <template lang="pug">
-    el-footer
+    el-footer(class="footer")
         el-col(:span="6" v-for="(navKey) in navList" v-bind:key="navKey.id")
             .grid-content
                 router-link(:to="navKey")
@@ -17,12 +17,12 @@ export default {
 </script>
 
 <style>
-.el-footer {
+.footer {
     position: absolute;
     left: 0;
     bottom: 0;
     width: 100%;
-    padding: 0px !important;
+    padding: 0 !important;
     text-align: center;
     color: white;
     background: black;
@@ -31,8 +31,9 @@ export default {
 .navBox {
     position: relative;
     height : 60px;
-    padding-top : 20px;
     cursor: pointer;
+    line-height: 60px;
+    vertical-align: middle;
 }
 
 .navBox:hover {
