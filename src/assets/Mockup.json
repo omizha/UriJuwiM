@@ -1,0 +1,721 @@
+{
+  "__collections__": {
+    "data": {
+      "3H1sjhNiIYLFlRRsyjlz": {
+        "AR": false,
+        "W3W": [
+          "올랐다.사옥.상담"
+        ],
+        "Location": "63아트",
+        "tourAPI": "http://api.visitkorea.or.kr/openapi/service/rest/KorService/detailIntro?ServiceKey=인증키&contentTypeId=14&contentId=613775&MobileOS=ETC&MobileApp=TourAPI3.0_Guide&introYN=Y",
+        "PhotoDescription": [
+          {
+            "CameraModel": "Galaxy Note 9",
+            "url": "https://firebasestorage.googleapis.com/v0/b/itsability-272be.appspot.com/o/image%2F63%EC%95%84%ED%8A%B8%2F63%EC%95%84%ED%8A%B8_1.jpg?alt=media&token=327bc55b-d0a7-4d8d-9cb4-5a6439ddd3a4",
+            "CaptureDate": "2018년 12월 25일",
+            "Paragraph": "창가에 서서 서울 도심을 내려다보는 듯한 포즈를 취해보세요. 노을이 있는 시간대에 맞춰 사진을 찍으면 좋아요. 뒷모습 상반신이 나오도록 찍는 것이 좋습니다. ",
+            "Location": "안쪽 전면유리",
+            "Keyword": "전망대, 서울야경, 노을"
+          },
+          {
+            "CameraModel": "Galaxy Note 9",
+            "url": "https://firebasestorage.googleapis.com/v0/b/itsability-272be.appspot.com/o/image%2F63%EC%95%84%ED%8A%B8%2F63%EC%95%84%ED%8A%B8_2.jpg?alt=media&token=4a717b6e-844a-4fc1-94a7-4fc662dff409",
+            "CaptureDate": "2018년 12월 25일",
+            "Paragraph": "포토존에 맞춰 다양한 포즈로 사진을 찍어보세요. 흐린 날은 바깥이 안 보일 수 있으니 주의하세요. 사진을 찍기 위해 순서를 기다려야 할 수도 있어요.",
+            "Location": "감성 문구 포토존",
+            "Keyword": "감성문구, 서울전경, 맑은날"
+          }
+        ],
+        "PlaceLocationDescription": "63빌딩 전망대",
+        "url": "https://firebasestorage.googleapis.com/v0/b/itsability-272be.appspot.com/o/image%2F63%EC%95%84%ED%8A%B8%2F63%EC%95%84%ED%8A%B8_1.jpg?alt=media&token=327bc55b-d0a7-4d8d-9cb4-5a6439ddd3a4",
+        "Address": "서울특별시 영등포구 63로 50",
+        "PlaceDescription": {
+          "NotRecommandTime": [
+            "날씨 흐린날",
+            "날씨가 흐리면 인생샷이 나오기 힘들어요"
+          ],
+          "PhotoTime": [
+            "Night",
+            "일몰시간",
+            "노을과 함께 인생샷을 남겨보세요"
+          ],
+          "OtherTips": [
+            "차분한 포즈",
+            "석양을 바라보며 우수에 찬 포즈를 취해보세요"
+          ],
+          "RecommandClothes": [
+            "시밀러 룩",
+            "연인, 친구와 함께 드레스코드를 맞춰 입어보세요"
+          ]
+        },
+        "__collections__": {}
+      },
+      "3jPw0VOHJRreBZnTAUlI": {
+        "W3W": [
+          "특권.튄다.레몬"
+        ],
+        "Location": "itsability 사무실",
+        "tourAPI": "",
+        "PhotoDescription": [
+          {
+            "CaptureDate": "2019년 10월 3일",
+            "Paragraph": "샌프란시스코 기념품들로 꾸며진 있어빌리티 사무실 안에서 안드로이드 피규어를 들고 찍어보세요. 마감 일정에 예민해진 개발자들이 상주하고 있으니 유의하세요. ",
+            "Location": "itsability 사무실",
+            "Keyword": "샌프란시스코, 안드로이드, 개발자",
+            "CameraModel": "Galaxy Note 10+",
+            "url": "https://firebasestorage.googleapis.com/v0/b/itsability-272be.appspot.com/o/image%2Fitsability%20%EC%82%AC%EB%AC%B4%EC%8B%A4%2Fitsability%20%EC%82%AC%EB%AC%B4%EC%8B%A4_1.jpg?alt=media&token=e9fd227a-5bc7-4565-833d-0a08753843d7"
+          }
+        ],
+        "PlaceLocationDescription": "7호선 숭실대입구역 3번 출구 도보 10분",
+        "url": "https://firebasestorage.googleapis.com/v0/b/itsability-272be.appspot.com/o/image%2Fitsability%20%EC%82%AC%EB%AC%B4%EC%8B%A4%2Fitsability%20%EC%82%AC%EB%AC%B4%EC%8B%A4_1.jpg?alt=media&token=e9fd227a-5bc7-4565-833d-0a08753843d7",
+        "Address": "서울특별시 동작구 상도로 369 숭실대학교 창신관",
+        "PlaceDescription": {
+          "PhotoTime": [
+            "Daytime",
+            "즐거운 분위기일 때",
+            "팀원들이 즐거운 분위기로 일하고 있을 때 사진을 찍어보세요"
+          ],
+          "OtherTips": [
+            "개발관련 소품",
+            "사무실에 있는 노트북, 개발관련 서적 등을 들고 개발자 느낌을 내보세요"
+          ],
+          "RecommandClothes": [
+            "공대생 룩",
+            "개발자, 공대생 같은 옷을 입고 사진을 찍어보세요"
+          ],
+          "NotRecommandTime": [
+            "개발자가 힘들어 할 때",
+            "개발자가 힘들어 하는 시간에는 사진을 찍기가 힘들어요"
+          ]
+        },
+        "AR": false,
+        "__collections__": {}
+      },
+      "4iTW8JYMPemEnYqEZNmt": {
+        "Location": "반포한강공원",
+        "tourAPI": "http://api.visitkorea.or.kr/openapi/service/rest/KorService/detailIntro?ServiceKey=인증키&contentTypeId=12&contentId=970138&MobileOS=ETC&MobileApp=TourAPI3.0_Guide&introYN=Y",
+        "PhotoDescription": [
+          {
+            "CaptureDate": "2018년 9월 26일",
+            "Paragraph": "가빛섬과 솔빛섬을 잇는 도교 입구 옆에서 포즈를 취해보세요. 노을이 지는 타이밍에 맞춰 사진을 찍는 것이 좋습니다. 뒷모습 상반신이 나오도록 찍어보세요. ",
+            "Location": "세빛섬 중 가빛섬 뒤편",
+            "Keyword": "노을, 뒷모습, 한강",
+            "CameraModel": "Galaxy Note 9",
+            "url": "https://firebasestorage.googleapis.com/v0/b/itsability-272be.appspot.com/o/image%2F%EB%B0%98%ED%8F%AC%ED%95%9C%EA%B0%95%EA%B3%B5%EC%9B%90%2F%EB%B0%98%ED%8F%AC%ED%95%9C%EA%B0%95%EA%B3%B5%EC%9B%90_1.jpg?alt=media&token=f6d51173-7ba7-49e0-ba96-a9278d51cf80"
+          },
+          {
+            "CaptureDate": "2019년 9월 3일",
+            "Paragraph": "노을이 지는 타이밍에 맞춰 사진을 찍어보세요. 세빛둥둥섬의 불이 켜질 때 찍는 것이 좋아요. 스팟 위치를 발견하기 어려울 수 있고, 발 밑을 조심해야 해요. 뒤돌아 세빛둥둥섬을 바라보는 듯한 전신 포즈로 찍는 것이 좋습니다. ",
+            "Location": "세빛둥둥섬 옆 반포대교 밑 도로",
+            "Keyword": "한강, 노을, 조명",
+            "CameraModel": "Galaxy Note 10+",
+            "url": "https://firebasestorage.googleapis.com/v0/b/itsability-272be.appspot.com/o/image%2F%EB%B0%98%ED%8F%AC%ED%95%9C%EA%B0%95%EA%B3%B5%EC%9B%90%2F%EB%B0%98%ED%8F%AC%ED%95%9C%EA%B0%95%EA%B3%B5%EC%9B%90_2.jpg?alt=media&token=16b872d3-b232-4846-b6f6-e763cdb06df1"
+          },
+          {
+            "CameraModel": "Galaxy Note 10+",
+            "url": "https://firebasestorage.googleapis.com/v0/b/itsability-272be.appspot.com/o/image%2F%EB%B0%98%ED%8F%AC%ED%95%9C%EA%B0%95%EA%B3%B5%EC%9B%90%2F%EB%B0%98%ED%8F%AC%ED%95%9C%EA%B0%95%EA%B3%B5%EC%9B%90_3.jpg?alt=media&token=23e9f265-e839-4b94-8e6b-76b1ee6b0eaf",
+            "CaptureDate": "2019년 9월 3일",
+            "Paragraph": "무지개분수가 시작하는 타이밍에 찍는 것이 좋아요. 광장 위쪽에서는 상반신, 아래쪽에서는 전신 사진으로 찍는 것이 좋습니다. 반포대교의 불이 켜지고 노을이 질 때 사진을 찍는 것이 잘 어울려요. ",
+            "Location": "무지개분수",
+            "Keyword": "분수, 반포대교, 유람선"
+          }
+        ],
+        "PlaceLocationDescription": "7호선 고속터미널역 도보 15분",
+        "url": "https://firebasestorage.googleapis.com/v0/b/itsability-272be.appspot.com/o/image%2F%EB%B0%98%ED%8F%AC%ED%95%9C%EA%B0%95%EA%B3%B5%EC%9B%90%2F%EB%B0%98%ED%8F%AC%ED%95%9C%EA%B0%95%EA%B3%B5%EC%9B%90_1.jpg?alt=media&token=f6d51173-7ba7-49e0-ba96-a9278d51cf80",
+        "Address": "서울특별시 서초구 반포2동 650-1",
+        "PlaceDescription": {
+          "NotRecommandTime": [
+            "비 오는 날",
+            "비가 오는 날에는 사진찍기가 힘들어요"
+          ],
+          "PhotoTime": [
+            "Night",
+            "일몰시간",
+            "노을과 함께 인생샷을 남겨보세요"
+          ],
+          "OtherTips": [
+            "뒷모습",
+            "노을과 함께 감성에 젖은 포즈를 취해보세요"
+          ],
+          "RecommandClothes": [
+            "편한 옷차림",
+            "한강에서 편하게 산책할 수 있는 옷을 입어보세요"
+          ]
+        },
+        "AR": false,
+        "W3W": [
+          "보장.생각하다.디저트",
+          "저가.무료.집중한",
+          "이상형.풍경.알리다"
+        ],
+        "__collections__": {}
+      },
+      "8qAOrJVUPaY8yriTVEiL": {
+        "url": "https://firebasestorage.googleapis.com/v0/b/itsability-272be.appspot.com/o/image%2F%EB%A7%88%EB%8B%B9%ED%94%8C%EB%9D%BC%EC%9B%8C%20%EC%B9%B4%ED%8E%98%2F%EB%A7%88%EB%8B%B9%ED%94%8C%EB%9D%BC%EC%9B%8C%20%EC%B9%B4%ED%8E%98_1.jpg?alt=media&token=0b09b54d-05d2-447f-8fe5-fa66096bb92b",
+        "Address": "서울특별시 종로구 익선동 수표로 28길 33-12",
+        "PlaceDescription": {
+          "NotRecommandTime": [
+            "공휴일",
+            "사람이 많으면 인생샷이 나오기 힘들어요"
+          ],
+          "PhotoTime": [
+            "Daytime",
+            "12시-3시",
+            "화창한 낮에 햇빛을 받으며 사진을 찍어보세요"
+          ],
+          "OtherTips": [
+            "발랄한 포즈",
+            "우산과 함께 장난스러운 포즈를 취해보세요"
+          ],
+          "RecommandClothes": [
+            "개화기 룩",
+            "경성 의복 대여점에서 개화기 의상을 체험해보세요"
+          ]
+        },
+        "AR": false,
+        "W3W": [
+          "그저께.잡지.고음"
+        ],
+        "Location": "마당플라워 카페",
+        "tourAPI": "",
+        "PhotoDescription": [
+          {
+            "CameraModel": "iPhone Xs",
+            "url": "https://firebasestorage.googleapis.com/v0/b/itsability-272be.appspot.com/o/image%2F%EB%A7%88%EB%8B%B9%ED%94%8C%EB%9D%BC%EC%9B%8C%20%EC%B9%B4%ED%8E%98%2F%EB%A7%88%EB%8B%B9%ED%94%8C%EB%9D%BC%EC%9B%8C%20%EC%B9%B4%ED%8E%98_1.jpg?alt=media&token=0b09b54d-05d2-447f-8fe5-fa66096bb92b",
+            "CaptureDate": "2019년 8월 25일",
+            "Paragraph": "우산을 잡고 있는 듯한 포즈를 취해보세요. 우산이 여러개가 나오도록 각도를 맞춰 찍는 것이 좋아요. 채도를 높여 우산의 색감을 살리는 보정법이 어울려요. ",
+            "Location": "카페 앞 골목",
+            "Keyword": "우산, 꽃, 골목"
+          },
+          {
+            "CameraModel": "iPhone Xs",
+            "url": "https://firebasestorage.googleapis.com/v0/b/itsability-272be.appspot.com/o/image%2F%EB%A7%88%EB%8B%B9%ED%94%8C%EB%9D%BC%EC%9B%8C%20%EC%B9%B4%ED%8E%98%2F%EB%A7%88%EB%8B%B9%ED%94%8C%EB%9D%BC%EC%9B%8C%20%EC%B9%B4%ED%8E%98_2.jpg?alt=media&token=c9ccaadd-e70a-4292-b930-fb8f01d4f56c",
+            "CaptureDate": "2019년 8월 25일",
+            "Paragraph": "물건을 구경하는 듯한 자연스러운 포즈를 취해보세요. 상반신만 나오도록 찍는 것이 좋습니다. 카페 손님의 얼굴이 나오지 않도록 주의해서 찍어야 해요. ",
+            "Location": "카페 앞 꽃이 많이 전시되어 있는 쪽",
+            "Keyword": "카페, 꽃, 물건"
+          }
+        ],
+        "PlaceLocationDescription": "5호선 종로3가역 4번출구 도보 3분",
+        "__collections__": {}
+      },
+      "AeL3GCT8R7SPO4TKnl7F": {
+        "PlaceLocationDescription": "9호선 선유도역 1번출구 도보 1분",
+        "url": "https://firebasestorage.googleapis.com/v0/b/itsability-272be.appspot.com/o/image%2F%EB%9A%9C%EC%8A%A4%EB%9A%9C%EC%8A%A4%2F%EB%9A%9C%EC%8A%A4%EB%9A%9C%EC%8A%A4_1.jpg?alt=media&token=64095504-36d1-4862-977b-ca264b8468a5",
+        "Address": "서울특별시 영등포구 양평동 5가 양평로 132",
+        "PlaceDescription": {
+          "NotRecommandTime": [
+            "사람 많은 날",
+            "사람이 많으면 사진찍기가 힘든 장소예요"
+          ],
+          "PhotoTime": [
+            "Daytime",
+            "카페 영업시간",
+            "카페내부의 수많은 필라멘트와 사진을 찍어보세요"
+          ],
+          "OtherTips": [
+            "차분한 포즈",
+            "필라멘트를 바라보며 빛나는 사진을 찍어보세요"
+          ],
+          "RecommandClothes": [
+            "모던 시크 룩",
+            "깔끔하고 세련된 느낌의 옷을 입어보세요"
+          ]
+        },
+        "AR": false,
+        "W3W": [
+          "밝기.전골.어두운"
+        ],
+        "Location": "뚜스뚜스",
+        "tourAPI": "",
+        "PhotoDescription": [
+          {
+            "CaptureDate": "2019년 8월 18일",
+            "Paragraph": "1층과 2층 사이 계단 중간에 앉아 포즈를 취하는 것이 좋아요. 뒷모습을 상반신만 나오도록 찍는 것이 좋습니다. 배경 흐림 효과를 사용해 찍어보세요. ",
+            "Location": "카페 내부 계단",
+            "Keyword": "카페, 계단, 조명",
+            "CameraModel": "Galaxy Note 10+",
+            "url": "https://firebasestorage.googleapis.com/v0/b/itsability-272be.appspot.com/o/image%2F%EB%9A%9C%EC%8A%A4%EB%9A%9C%EC%8A%A4%2F%EB%9A%9C%EC%8A%A4%EB%9A%9C%EC%8A%A4_1.jpg?alt=media&token=64095504-36d1-4862-977b-ca264b8468a5"
+          }
+        ],
+        "__collections__": {}
+      },
+      "EnW7FGJ2tyZHZ4JGBFUt": {
+        "AR": false,
+        "W3W": [
+          "우산.메뉴.액수"
+        ],
+        "Location": "LIZE&MilkCocoa",
+        "tourAPI": "",
+        "PhotoDescription": [
+          {
+            "CaptureDate": "2019년 1월 27일",
+            "Paragraph": "매장 앞에 꾸며진 포토존에서 포즈를 취해보세요. 의자에 앉아 전신이 나오도록 찍는 것이 좋습니다. 붉은 꽃과 함께 셀카를 찍어보세요.",
+            "Location": "매장 앞 포토존",
+            "Keyword": "포토존, 꽃, 셀카",
+            "CameraModel": "Galaxy Note 9",
+            "url": "https://firebasestorage.googleapis.com/v0/b/itsability-272be.appspot.com/o/image%2FLIZE%26MilkCocoa%2FLIZE%26MilkCocoa_1.jpg?alt=media&token=dc9a6ace-b265-4b5e-88d3-ff6ce8c1ea99"
+          }
+        ],
+        "PlaceLocationDescription": "2호선 홍대입구역 9번출구 도보 6분",
+        "url": "https://firebasestorage.googleapis.com/v0/b/itsability-272be.appspot.com/o/image%2FLIZE%26MilkCocoa%2FLIZE%26MilkCocoa_1.jpg?alt=media&token=dc9a6ace-b265-4b5e-88d3-ff6ce8c1ea99",
+        "Address": "서울특별시 마포구 서교동 358-112",
+        "PlaceDescription": {
+          "NotRecommandTime": [
+            "비 오는 날",
+            "야외에 위치해 인생샷이 나오기 힘들어요"
+          ],
+          "PhotoTime": [
+            "Daytime",
+            "카페 영업시간",
+            "벽에 장식된 꽃과 함께 사진을 찍어보세요"
+          ],
+          "OtherTips": [
+            "차분한 포즈",
+            "붉은 꽃과 함께 차분하고 지적인 포즈를 취해보세요"
+          ],
+          "RecommandClothes": [
+            "러블리한 원피스",
+            "로맨틱한 느낌이 나는 옷을 입어보세요"
+          ]
+        },
+        "__collections__": {}
+      },
+      "Lg3A2b7U3c5ZaXEReGvL": {
+        "PlaceLocationDescription": "2호선 강남역 11번출구 도보 3분",
+        "url": "https://firebasestorage.googleapis.com/v0/b/itsability-272be.appspot.com/o/image%2F%EC%95%84%ED%8A%B8%EB%AA%AC%EC%8A%A4%ED%84%B0%20%EA%B0%95%EB%82%A8%2F%EC%95%84%ED%8A%B8%EB%AA%AC%EC%8A%A4%ED%84%B0%20%EA%B0%95%EB%82%A8_1.jpg?alt=media&token=ff5aedb2-a0be-4bd0-9ae9-c12b77c6c0fe",
+        "Address": "서울특별시 강남구 테헤란로 1길 28-3",
+        "PlaceDescription": {
+          "NotRecommandTime": [
+            "손님이 몰리는 시간",
+            "사람이 많으면 인생샷이 나오기 힘들어요"
+          ],
+          "PhotoTime": [
+            "Night",
+            "저녁",
+            "강렬한 네온사인과 함께 인생샷을 남겨보세요"
+          ],
+          "OtherTips": [
+            "자신감있는 포즈",
+            "강렬한 네온사인 아래에서 당당한 포즈를 취해보세요"
+          ],
+          "RecommandClothes": [
+            "빈티지 룩",
+            "네온사인과 어울리는 힙한 옷을 입어보세요"
+          ]
+        },
+        "AR": false,
+        "W3W": [
+          "짬뽕.감촉.사모님"
+        ],
+        "Location": "아트몬스터 강남",
+        "tourAPI": "",
+        "PhotoDescription": [
+          {
+            "CameraModel": "iPhone Xs",
+            "url": "https://firebasestorage.googleapis.com/v0/b/itsability-272be.appspot.com/o/image%2F%EC%95%84%ED%8A%B8%EB%AA%AC%EC%8A%A4%ED%84%B0%20%EA%B0%95%EB%82%A8%2F%EC%95%84%ED%8A%B8%EB%AA%AC%EC%8A%A4%ED%84%B0%20%EA%B0%95%EB%82%A8_1.jpg?alt=media&token=ff5aedb2-a0be-4bd0-9ae9-c12b77c6c0fe",
+            "CaptureDate": "2019년 9월 3일",
+            "Paragraph": "네온 사인 아래에서 느낌있는 포즈를 취해보세요. 여러개의 간판이 보이도록 각도를 조정해보세요. 채도를 조정해 네온사인을 강조하는 보정법이 좋습니다. ",
+            "Location": "가게 앞 계단",
+            "Keyword": "간판, 네온사인, 힙한"
+          }
+        ],
+        "__collections__": {}
+      },
+      "MdwfWrGX8yzmWtYG9EtZ": {
+        "PlaceLocationDescription": "롯데월드 아쿠아리움 내부",
+        "url": "https://firebasestorage.googleapis.com/v0/b/itsability-272be.appspot.com/o/image%2F%EB%A1%AF%EB%8D%B0%EC%9B%94%EB%93%9C%20%EC%95%84%EC%BF%A0%EC%95%84%EB%A6%AC%EC%9B%80%2F%EB%A1%AF%EB%8D%B0%EC%9B%94%EB%93%9C%20%EC%95%84%EC%BF%A0%EC%95%84%EB%A6%AC%EC%9B%80_1.jpg?alt=media&token=105c73f5-0dc7-490a-a035-535c84082ccd",
+        "Address": "서울시 송파구 잠실 6동 올림픽로 300",
+        "PlaceDescription": {
+          "PhotoTime": [
+            "Daytime",
+            "아쿠아리움 영업시간",
+            "아쿠아리움 내부에서 인생샷을 남겨보세요"
+          ],
+          "OtherTips": [
+            "손 뻗는 포즈",
+            "물고기를 향해 손을 뻗는 듯한 포즈를 취해보세요"
+          ],
+          "RecommandClothes": [
+            "캐쥬얼한 옷",
+            "아쿠아리움과 잘 어울리는 캐주얼한 옷을 입어보세요"
+          ],
+          "NotRecommandTime": [
+            "사람 많은 날",
+            "사람이 많으면 사진찍기가 힘든 장소예요"
+          ]
+        },
+        "AR": false,
+        "W3W": [
+          "기다.스타일.최신형"
+        ],
+        "Location": "롯데월드 아쿠아리움",
+        "tourAPI": "http://api.visitkorea.or.kr/openapi/service/rest/KorService/detailIntro?ServiceKey=인증키&contentTypeId=14&contentId=2476731&MobileOS=ETC&MobileApp=TourAPI3.0_Guide&introYN=Y",
+        "PhotoDescription": [
+          {
+            "Location": "아쿠아리움 해저터널 내부",
+            "Keyword": "물고기, 해저터널, 파란색감",
+            "CameraModel": "Galaxy Note 9",
+            "url": "https://firebasestorage.googleapis.com/v0/b/itsability-272be.appspot.com/o/image%2F%EB%A1%AF%EB%8D%B0%EC%9B%94%EB%93%9C%20%EC%95%84%EC%BF%A0%EC%95%84%EB%A6%AC%EC%9B%80%2F%EB%A1%AF%EB%8D%B0%EC%9B%94%EB%93%9C%20%EC%95%84%EC%BF%A0%EC%95%84%EB%A6%AC%EC%9B%80_1.jpg?alt=media&token=105c73f5-0dc7-490a-a035-535c84082ccd",
+            "CaptureDate": "2019년 3월 24일",
+            "Paragraph": "큰 물고기가 지나가는 타이밍에 맞춰 사진을 찍어보세요. 물고기를 만지는 듯한 손동작으로 포인트를 줘도 좋아요. 상반신만 나오도록 찍는 것이 좋습니다. 채도를 높여 파란 색감을 강조하는 보정법이 어울려요. "
+          }
+        ],
+        "__collections__": {}
+      },
+      "N2ur2YOpbK5ox0OyktaN": {
+        "PhotoDescription": [
+          {
+            "CaptureDate": "2019년 9월 3일",
+            "Paragraph": "카페 앞에 꾸며진 포토존에서 포즈를 취해보세요. 네온 사인 아래 벤치에 앉은 사진을 찍어보세요. 채도를 조절해 네온사인을 강조하도록 보정하는 것이 좋습니다. 벤치 앞 테이블이 사진에 나오지 않도록 유의하세요. ",
+            "Location": "카페 입구의 벤치",
+            "Keyword": "네온사인, 벤치, 포토존",
+            "CameraModel": "iPhone Xs",
+            "url": "https://firebasestorage.googleapis.com/v0/b/itsability-272be.appspot.com/o/image%2F%EB%A1%9C%EC%A7%80%EB%B8%8C%EB%A6%AD%2F%EB%A1%9C%EC%A7%80%EB%B8%8C%EB%A6%AD_1.png?alt=media&token=0c021498-2b37-4e9c-9e8a-1e589552dd2c"
+          }
+        ],
+        "PlaceLocationDescription": "2호선 서울대입구역 2번출구 도보 4분",
+        "url": "https://firebasestorage.googleapis.com/v0/b/itsability-272be.appspot.com/o/image%2F%EB%A1%9C%EC%A7%80%EB%B8%8C%EB%A6%AD%2F%EB%A1%9C%EC%A7%80%EB%B8%8C%EB%A6%AD_1.png?alt=media&token=0c021498-2b37-4e9c-9e8a-1e589552dd2c",
+        "Address": "서울특별시 관악구 남부순환로 226길 23-10",
+        "PlaceDescription": {
+          "PhotoTime": [
+            "Daytime",
+            "카페 영업시간",
+            "카페 앞에 있는 의자에 앉아 네온사인과 함께 사진을 찍어보세요"
+          ],
+          "OtherTips": [
+            "사랑스러운 포즈",
+            "연인과 함께 사랑스러운 포즈를 취해보세요"
+          ],
+          "RecommandClothes": [
+            "페미닌 룩",
+            "여성스러우면서도 우아한 느낌이 나는 옷을 입어보세요"
+          ],
+          "NotRecommandTime": [
+            "비 오는 날",
+            "야외에 위치해 인생샷이 나오기 힘들어요"
+          ]
+        },
+        "AR": false,
+        "W3W": [
+          "시원하다.꿈속.극복"
+        ],
+        "Location": "로지브릭",
+        "tourAPI": "",
+        "__collections__": {}
+      },
+      "PjFCNljLahlY8aZXTfRr": {
+        "Location": "원인어밀리언",
+        "tourAPI": "",
+        "PhotoDescription": [
+          {
+            "CameraModel": "Galaxy Note 9",
+            "url": "https://firebasestorage.googleapis.com/v0/b/itsability-272be.appspot.com/o/image%2F%EC%9B%90%EC%9D%B8%EC%96%B4%EB%B0%80%EB%A6%AC%EC%96%B8%2F%EC%9B%90%EC%9D%B8%EC%96%B4%EB%B0%80%EB%A6%AC%EC%96%B8_1.jpg?alt=media&token=8000c0f3-1001-4c86-8f34-6e9e569c249e",
+            "CaptureDate": "2019년 8월 8일",
+            "Paragraph": "아치형 창을 활용해 다양한 포즈를 취해보세요. 뒷모습 혹은 앞모습을 상반신이 보이도록 찍는 것이 좋습니다. 음료를 들고 사진을 찍어보세요.",
+            "Location": "카페 안 붉은 벽",
+            "Keyword": "창, 붉은벽, 음료"
+          }
+        ],
+        "PlaceLocationDescription": "2호선 강남역 11번출구 도보 3분",
+        "url": "https://firebasestorage.googleapis.com/v0/b/itsability-272be.appspot.com/o/image%2F%EC%9B%90%EC%9D%B8%EC%96%B4%EB%B0%80%EB%A6%AC%EC%96%B8%2F%EC%9B%90%EC%9D%B8%EC%96%B4%EB%B0%80%EB%A6%AC%EC%96%B8_1.jpg?alt=media&token=8000c0f3-1001-4c86-8f34-6e9e569c249e",
+        "Address": "서울특별시 강남구 강남대로 96길 20",
+        "PlaceDescription": {
+          "NotRecommandTime": [
+            "손님이 몰리는 시간",
+            "사람이 많으면 인생샷이 나오기 힘들어요"
+          ],
+          "PhotoTime": [
+            "Daytime",
+            "카페 영업시간",
+            "카페 안에 있는 강렬한 붉은색 벽과 함께 사진을 찍어보세요"
+          ],
+          "OtherTips": [
+            "귀여운 포즈",
+            "다양한 손동작으로 사랑스러운 포즈를 취해보세요"
+          ],
+          "RecommandClothes": [
+            "미니멀 룩",
+            "심플하고 데일리한 느낌의 옷을 입어보세요"
+          ]
+        },
+        "AR": false,
+        "W3W": [
+          "조언.야옹.그냥"
+        ],
+        "__collections__": {}
+      },
+      "adrkoU4i2OkatzOayuuE": {
+        "W3W": [
+          "필요한.의상.최고의",
+          "끝났다.신난.당당한"
+        ],
+        "Location": "숭실대학교",
+        "tourAPI": "",
+        "PhotoDescription": [
+          {
+            "Keyword": "노을, 나무, 내리막길",
+            "CameraModel": "Galaxy Note 10+",
+            "url": "https://firebasestorage.googleapis.com/v0/b/itsability-272be.appspot.com/o/image%2F%EC%88%AD%EC%8B%A4%EB%8C%80%ED%95%99%EA%B5%90%2F%EC%88%AD%EC%8B%A4%EB%8C%80%ED%95%99%EA%B5%90_1.jpg?alt=media&token=35051cfe-31db-4dd9-b083-25c325a06c7f",
+            "CaptureDate": "2019년 9월 5일",
+            "Paragraph": "창신관 계단 아래 내리막길에서 사진을 찍어보세요. 뒷모습을 전신 사진으로 찍는 것이 좋습니다. 노을과 나무가 적절히 보이도록 찍는 것이 좋습니다. ",
+            "Location": "미래관 위 언덕"
+          }
+        ],
+        "PlaceLocationDescription": "7호선 숭실대입구역 3번출구 근처",
+        "url": "https://firebasestorage.googleapis.com/v0/b/itsability-272be.appspot.com/o/image%2F%EC%88%AD%EC%8B%A4%EB%8C%80%ED%95%99%EA%B5%90%2F%EC%88%AD%EC%8B%A4%EB%8C%80%ED%95%99%EA%B5%90_1.jpg?alt=media&token=35051cfe-31db-4dd9-b083-25c325a06c7f",
+        "Address": "서울특별시 동작구 상도로 369",
+        "PlaceDescription": {
+          "PhotoTime": [
+            "Night",
+            "일몰시간",
+            "노을과 함께 인생샷을 남겨보세요"
+          ],
+          "OtherTips": [
+            "자연스러운 포즈",
+            "캠퍼스를 거니는 듯한 자연스러운 포즈를 취해보세요"
+          ],
+          "RecommandClothes": [
+            "캠퍼스 룩",
+            "대학 인싸의 느낌이 나는 캐쥬얼한 옷을 입어보세요"
+          ],
+          "NotRecommandTime": [
+            "흐린날",
+            "날씨가 흐리면 인생샷이 나오기 힘들어요"
+          ]
+        },
+        "AR": false,
+        "__collections__": {}
+      },
+      "b0fqxnp7uKxJddEPMkoD": {
+        "PlaceLocationDescription": "롯데월드 어드벤처, 매직아일랜드",
+        "url": "https://firebasestorage.googleapis.com/v0/b/itsability-272be.appspot.com/o/image%2F%EB%A1%AF%EB%8D%B0%EC%9B%94%EB%93%9C%2F%EB%A1%AF%EB%8D%B0%EC%9B%94%EB%93%9C_1.jpg?alt=media&token=272dc52c-407e-44f8-80d8-3ff503a55739",
+        "Address": "서울특별시 송파구 올림픽로 300",
+        "PlaceDescription": {
+          "PhotoTime": [
+            "Night",
+            "8시 이후",
+            "아침보다는 야경! 매직 아일랜드의 불이 켜질 때 인생샷을 찍을 수 있어요."
+          ],
+          "OtherTips": [
+            "발랄한 포즈",
+            "소중한 사람과 함께 재미있는 포즈를 취해보세요"
+          ],
+          "RecommandClothes": [
+            "교복과 머리띠",
+            "컨셉 의상을 입고 인생사진을 남겨보세요"
+          ],
+          "NotRecommandTime": [
+            "장마 시즌",
+            "비가 오는 날에는 사진찍기가 힘들어요"
+          ]
+        },
+        "AR": false,
+        "W3W": [
+          "일한.기술.전등",
+          "개미.마지막.전화번호"
+        ],
+        "Location": "롯데월드",
+        "tourAPI": "http://api.visitkorea.or.kr/openapi/service/rest/KorService/detailIntro?ServiceKey=인증키&contentTypeId=12&contentId=126498&MobileOS=ETC&MobileApp=TourAPI3.0_Guide&introYN=Y",
+        "PhotoDescription": [
+          {
+            "CameraModel": "Galaxy Note 9",
+            "url": "https://firebasestorage.googleapis.com/v0/b/itsability-272be.appspot.com/o/image%2F%EB%A1%AF%EB%8D%B0%EC%9B%94%EB%93%9C%2F%EB%A1%AF%EB%8D%B0%EC%9B%94%EB%93%9C_1.jpg?alt=media&token=272dc52c-407e-44f8-80d8-3ff503a55739",
+            "CaptureDate": "2019년 1월 6일",
+            "Paragraph": "낮에는 앞모습을, 밤에는 뒷모습 전신을 찍는 것이 좋아요. 채도를 높여 조명을 강조하는 것이 좋습니다. 사람이 적은 타이밍에 맞춰 사진을 찍어보세요. ",
+            "Location": "롯데월드 매직아일랜드 입구 다리",
+            "Keyword": "야경, 성, 조명"
+          },
+          {
+            "CameraModel": "Galaxy Note 9",
+            "url": "https://firebasestorage.googleapis.com/v0/b/itsability-272be.appspot.com/o/image%2F%EB%A1%AF%EB%8D%B0%EC%9B%94%EB%93%9C%2F%EB%A1%AF%EB%8D%B0%EC%9B%94%EB%93%9C_2.jpg?alt=media&token=3ec6271e-5f62-46c0-b0a1-d62291176f6c",
+            "CaptureDate": "2019년 1월 6일",
+            "Paragraph": "사람이 많은 포토존을 피해 사람이 적은 곳을 찾아 사진을 찍으면 좋아요. 열기구가 지나갈 타이밍을 맞춰 포즈를 취해보세요. 채도를 조정해 회전목마의 불빛이 돋보이게 보정하는 것이 좋습니다. ",
+            "Location": "롯데월드 내 회전목마 앞",
+            "Keyword": "회전목마, 불빛, 열기구"
+          }
+        ],
+        "__collections__": {}
+      },
+      "boM1GQJ782abaUeV0m98": {
+        "Location": "아크앤북",
+        "tourAPI": "http://api.visitkorea.or.kr/openapi/service/rest/KorService/detailIntro?ServiceKey=인증키&contentTypeId=38&contentId=2618716&MobileOS=ETC&MobileApp=TourAPI3.0_Guide&introYN=Y",
+        "PhotoDescription": [
+          {
+            "CameraModel": "iPhone Xs",
+            "url": "https://firebasestorage.googleapis.com/v0/b/itsability-272be.appspot.com/o/image%2F%EC%95%84%ED%81%AC%EC%95%A4%EB%B6%81%2F%EC%95%84%ED%81%AC%EC%95%A4%EB%B6%81_1.jpg?alt=media&token=dc2564a1-e45b-41a8-bbc2-742c4818dfad",
+            "CaptureDate": "2019년 8월 14일",
+            "Paragraph": "아치형 터널이 강조되도록 포즈를 취해보세요. 책을 바라보는 듯한 뒷모습을 전신으로 찍는 것이 좋습니다. 다른 사람이 사진에 나오지 않도록 유의하세요. ",
+            "Location": "책으로 구성된 터널 안",
+            "Keyword": "터널, 전신샷, 책"
+          },
+          {
+            "Keyword": "하얀불빛, 책, 상반신샷",
+            "CameraModel": "iPhone Xs",
+            "url": "https://firebasestorage.googleapis.com/v0/b/itsability-272be.appspot.com/o/image%2F%EC%95%84%ED%81%AC%EC%95%A4%EB%B6%81%2F%EC%95%84%ED%81%AC%EC%95%A4%EB%B6%81_2.jpg?alt=media&token=a4dd913f-1b16-4840-8dcf-1e37ce0c78a9",
+            "CaptureDate": "2019년 8월 14일",
+            "Paragraph": "쌓여진 책 사이의 하얀 불빛에서 포즈를 취해보세요. 고개를 살짝 돌리고 상반신이 나오도록 찍는 것이 좋습니다. 책을 배경으로 셀카를 찍어보세요. ",
+            "Location": "책으로 구성된 터널 안"
+          }
+        ],
+        "PlaceLocationDescription": "을지로입구역 1-1번 출구 아크앤북 책 터널",
+        "url": "https://firebasestorage.googleapis.com/v0/b/itsability-272be.appspot.com/o/image%2F%EC%95%84%ED%81%AC%EC%95%A4%EB%B6%81%2F%EC%95%84%ED%81%AC%EC%95%A4%EB%B6%81_1.jpg?alt=media&token=dc2564a1-e45b-41a8-bbc2-742c4818dfad",
+        "Address": "서울특별시 중구 을지로 29 ",
+        "PlaceDescription": {
+          "PhotoTime": [
+            "Daytime",
+            "서점 영업시간",
+            "수많은 책으로 이루어진 터널과 함께 인생샷을 남겨보세요"
+          ],
+          "OtherTips": [
+            "차분한 포즈",
+            "책과 함께 세련된 포즈를 취해보세요"
+          ],
+          "RecommandClothes": [
+            "오피스 룩",
+            "단정하고 지적인 느낌이 나는 오피스 룩을 입어보세요"
+          ],
+          "NotRecommandTime": [
+            "사람 많은 날",
+            "사람이 많으면 사진찍기가 힘든 장소예요"
+          ]
+        },
+        "AR": false,
+        "W3W": [
+          "의자.퇴장.나들이"
+        ],
+        "__collections__": {}
+      },
+      "cdRYBkDRszcnXaGtG4WC": {
+        "PhotoDescription": [
+          {
+            "CameraModel": "Galaxy Note 10+",
+            "url": "https://firebasestorage.googleapis.com/v0/b/itsability-272be.appspot.com/o/image%2F%EB%B3%84%EB%A7%88%EB%8B%B9%EB%8F%84%EC%84%9C%EA%B4%80%2F%EB%B3%84%EB%A7%88%EB%8B%B9%EB%8F%84%EC%84%9C%EA%B4%80_1.jpg?alt=media&token=a4c7eb70-5dad-4f78-b897-246c5abb245a",
+            "CaptureDate": "2019년 9월 18일",
+            "Paragraph": "\"별마당 도서관\"이 적혀 있는 대형 책장 앞에서 포즈를 취해보세요. 에스컬레이터를 타고 내려오면서 사진을 찍어도 좋습니다. 사람이 적을 때 촬영하는 것이 좋아요. ",
+            "Location": "책으로 구성된 도서관 앞",
+            "Keyword": "책장, 에스컬레이터, 도서관"
+          }
+        ],
+        "PlaceLocationDescription": "스타필드 코엑스 몰 B1F 에스컬레이터 앞",
+        "url": "https://firebasestorage.googleapis.com/v0/b/itsability-272be.appspot.com/o/image%2F%EB%B3%84%EB%A7%88%EB%8B%B9%EB%8F%84%EC%84%9C%EA%B4%80%2F%EB%B3%84%EB%A7%88%EB%8B%B9%EB%8F%84%EC%84%9C%EA%B4%80_1.jpg?alt=media&token=a4c7eb70-5dad-4f78-b897-246c5abb245a",
+        "Address": "서울특별시 강남구 영동대로 512  ",
+        "PlaceDescription": {
+          "PhotoTime": [
+            "Daytime",
+            "영업시간",
+            "수많은 책으로 이루어진 도서관과 함께 인생샷을 남겨보세요"
+          ],
+          "OtherTips": [
+            "지적인 포즈",
+            "책 한 권을 들고 차분한 포즈를 취해보세요"
+          ],
+          "RecommandClothes": [
+            "모던 룩",
+            "차분하고 지적인 느낌이 나는 옷을 입어보세요"
+          ],
+          "NotRecommandTime": [
+            "사람 많은 날",
+            "사람이 많으면 사진찍기가 힘든 장소예요"
+          ]
+        },
+        "AR": false,
+        "W3W": [
+          "목걸이.형체.감다"
+        ],
+        "Location": "별마당도서관",
+        "tourAPI": "http://api.visitkorea.or.kr/openapi/service/rest/KorService/detailIntro?ServiceKey=인증키&contentTypeId=14&contentId=2507822&MobileOS=ETC&MobileApp=TourAPI3.0_Guide&introYN=Y",
+        "__collections__": {}
+      },
+      "h5Q77mvLWijxUXRX8NKZ": {
+        "PlaceLocationDescription": "BHC 건물 2F 내부에 레터링간판 앞",
+        "url": "https://firebasestorage.googleapis.com/v0/b/itsability-272be.appspot.com/o/image%2F%EC%BC%80%EC%9D%B4%ED%81%AC%ED%8C%9D%2F%EC%BC%80%EC%9D%B4%ED%81%AC%ED%8C%9D_1.jpg?alt=media&token=d4a65454-aa2f-46b1-b7a5-234bf4e24efb",
+        "Address": "서울특별시 동작구 상도로 28 ",
+        "PlaceDescription": {
+          "NotRecommandTime": [
+            "점심시간",
+            "사람이 많으면 인생샷이 나오기 힘들어요"
+          ],
+          "PhotoTime": [
+            "Daytime",
+            "카페 영업시간",
+            "카페 내부에 있는 레터링간판과 함께 사진을 찍어보세요"
+          ],
+          "OtherTips": [
+            "지적인 포즈",
+            "노트북, 전공책 등을 활용해 지적인 포즈를 취해보세요"
+          ],
+          "RecommandClothes": [
+            "캠퍼스 룩",
+            "편하고 활동적인 대학생st 옷을 입어보세요"
+          ]
+        },
+        "AR": true,
+        "W3W": [
+          "티백.본능.대조"
+        ],
+        "Location": "케이크팝",
+        "tourAPI": "",
+        "ARRoomNum": 12,
+        "PhotoDescription": [
+          {
+            "Location": "레터링간판",
+            "Keyword": "레터링간판, 디저트, 카페",
+            "CameraModel": "Galaxy Note 10+",
+            "url": "https://firebasestorage.googleapis.com/v0/b/itsability-272be.appspot.com/o/image%2F%EC%BC%80%EC%9D%B4%ED%81%AC%ED%8C%9D%2F%EC%BC%80%EC%9D%B4%ED%81%AC%ED%8C%9D_1.jpg?alt=media&token=d4a65454-aa2f-46b1-b7a5-234bf4e24efb",
+            "CaptureDate": "2019년 9월 25일",
+            "Paragraph": "레터링 간판 아래에서 디저트를 바라보는 듯한 포즈를 취해보세요. 뒷모습을 상반신만 나오도록 찍는 것이 좋습니다. 사람이 적은 시간에 방문하여 찍는 것이 좋습니다. "
+          }
+        ],
+        "__collections__": {}
+      },
+      "wlvZma85xMHTdbS5nsvF": {
+        "PlaceLocationDescription": "2호선 홍대입구역 9번출구 도보 7분",
+        "url": "https://firebasestorage.googleapis.com/v0/b/itsability-272be.appspot.com/o/image%2F943%20%ED%82%B9%EC%8A%A4%ED%81%AC%EB%A1%9C%EC%8A%A4%2F943%20%ED%82%B9%EC%8A%A4%ED%81%AC%EB%A1%9C%EC%8A%A4_1.jpg?alt=media&token=414792e5-cf9c-48a8-ab79-b70f3716635d",
+        "Address": "서울특별시 마포구 양화로16길 24",
+        "PlaceDescription": {
+          "NotRecommandTime": [
+            "해가 지고 난 후",
+            "어두워지면 인생샷이 나오기 힘들어요"
+          ],
+          "PhotoTime": [
+            "Daytime",
+            "카페 영업시간",
+            "카페 입구에 있는 빗자루에 앉아 사진을 찍어보세요"
+          ],
+          "OtherTips": [
+            "개구진 포즈",
+            "빗자루를 타고 날아가는 듯한 재미있는 포즈를 취해보세요"
+          ],
+          "RecommandClothes": [
+            "마법사 망토",
+            "마법 학교 학생 느낌이 나는 옷을 입어보세요"
+          ]
+        },
+        "AR": false,
+        "W3W": [
+          "착한.쾌활한.왠지"
+        ],
+        "Location": "943 킹스크로스",
+        "tourAPI": "",
+        "PhotoDescription": [
+          {
+            "Keyword": "빗자루, 삼각대, 마법사",
+            "CameraModel": "Galaxy Note 10+",
+            "url": "https://firebasestorage.googleapis.com/v0/b/itsability-272be.appspot.com/o/image%2F943%20%ED%82%B9%EC%8A%A4%ED%81%AC%EB%A1%9C%EC%8A%A4%2F943%20%ED%82%B9%EC%8A%A4%ED%81%AC%EB%A1%9C%EC%8A%A4_1.jpg?alt=media&token=414792e5-cf9c-48a8-ab79-b70f3716635d",
+            "CaptureDate": "2019년 9월 28일",
+            "Paragraph": "빗자루 위에 걸터앉아 하늘을 날아가는 듯한 포즈를 취해보세요. 빗자루와 배경이 나오도록 전신 사진을 찍는 것이 좋습니다. 삼각대를 이용해 셀프로 사진을 찍어보세요. ",
+            "Location": "카페 입구의 빗자루 위"
+          }
+        ],
+        "__collections__": {}
+      }
+    },
+    "user": {
+      "ManagePermission": {
+        "L4moyTWIzjVdCNvLot4OzkXwavW2": "하정훈",
+        "__collections__": {}
+      }
+    }
+  }
+}
