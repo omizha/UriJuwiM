@@ -6,7 +6,7 @@
                 <p>인생샷을 찾아보세요</p>
             </div>
         </el-collapse-transition>
-        <el-collapse-transition>
+        <transition name="el-fade-in-linear">
             <el-row class='plates' v-show="!placeload">
                 <el-col :span="12" v-for="item in db.data" :key="item.Location" style='float: top'>
                     <el-card :body-style="{ padding: '0px' }">
@@ -21,11 +21,11 @@
                 </el-col>
                 <div class="el-scrollbar__bar is-vertical"></div>
             </el-row>
-        </el-collapse-transition>
+        </transition>
         <el-collapse-transition>
             <div class="infobox" v-if='placeload'>
                 <intro v-bind:info='selectedplace'></intro>
-                <el-button @click="placeload = !placeload">뒤로가기</el-button>
+                <el-button @click="placeload = !placeload">메인화면</el-button>
             </div>
         </el-collapse-transition>
     </div>
@@ -66,7 +66,6 @@ export default {
         max-height: 20%;
     }
     .plates {
-        /*margin: auto;*/
         margin-bottom: 100px;
         overflow-y: auto;
         overflow-x: hidden;
