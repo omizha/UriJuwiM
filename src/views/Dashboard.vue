@@ -1,26 +1,31 @@
 <template>
     <div>
-        <div class="upperbox">
-            <p>새로운 경험을 할 장소를 찾아보세요!</p>
-        </div>
-        <transition name="slide-fade" :duration="200" mode="out-in">
-            <div id="places" v-if="!placeload">
-                <div v-for="item in moc" :key="item.name">
-                    <img :src="item.thumbnail">
-                    <p>{{ item.name }}</p>
-                </div>
+        <el-collapse-transition>
+            <div class="upperbox" v-show="!placeload">
+                <p>당신이 찍고싶은</p>
+                <p>인생샷을 찾아보세요</p>
             </div>
-            <intro v-if='placeload'></intro>
-        </transition>
-<!--        <transition name="fade" mode="out-in">-->
-<!--            -->
-<!--        </transition>-->
-        <el-button @click="placeload = !placeload">TEST IT!</el-button>
+        </el-collapse-transition>
+        <el-collapse-transition>
+            <div class='plates' v-show="!placeload">
+                <div v-for="item in db.data" :key="item.Location" v-on:click="switchview(item)">
+                    <el-image style="max-height: 200px; max-width: 200px" :src="item.url"></el-image>
+                    <p>{{ item.Location }}</p>
+                </div>
+                <div class="el-scrollbar__bar is-vertical"></div>
+            </div>
+        </el-collapse-transition>
+        <el-collapse-transition>
+            <div class="infobox" v-if='placeload'>
+                <intro v-bind:info='selectedplace'></intro>
+                <el-button @click="placeload = !placeload">뒤로가기</el-button>
+            </div>
+        </el-collapse-transition>
     </div>
 </template>
 
 <script>
-import mockup from '../assets/mockup.js'
+import mock from '../assets/Mockup.json'
 import intro from '@/components/PlaceIntroduction.vue'
 
 export default {
@@ -30,18 +35,35 @@ export default {
     },
     data () {
         return {
-            moc: mockup,
-            placeload: false
+            db: mock.__collections__,
+            placeload: false,
+            selectedplace: undefined
         }
     },
     methods: {
+        switchview: function (place) {
+            this.selectedplace = place
+            this.placeload = !this.placeload
+        }
     }
 }
 </script>
 
 <style scoped>
     .upperbox {
-        height: 30%;
-        background-color: #F56C6C;
+        background: #F56C6C;
+        color: #FFFFFF;
+        font-size: 36px;
+    }
+    img {
+        max-height: 20%;
+    }
+    .plates {
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+    .infobox {
+        margin-bottom: 100px;
+        max-height: 10%;
     }
 </style>
