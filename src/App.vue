@@ -12,6 +12,25 @@ export default {
     name: 'app',
     components: {
         Nav
+    },
+    methods: {
+        onResize (event) {
+            var divApp = document.getElementById('app')
+
+            divApp.style.width = window.innerWidth
+            divApp.style.height = parseInt(window.innerHeight) - 60 + 'px'
+        }
+    },
+    mounted () {
+        window.addEventListener('resize', this.onResize)
+
+        var divApp = document.getElementById('app')
+
+        divApp.style.width = window.innerWidth
+        divApp.style.height = parseInt(window.innerHeight) - 60 + 'px'
+    },
+    beforeDestroy () {
+        window.removeEventListener('resize', this.onResize)
     }
 }
 </script>
@@ -20,7 +39,9 @@ export default {
 html, body {
     width : 100%;
     height : 100%;
-    overflow-x: hidden;
+    overflow: hidden;
+    margin : 0;
+
     text-decoration: none !important;
 }
 
