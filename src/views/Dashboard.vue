@@ -2,18 +2,18 @@
     <div>
         <el-collapse-transition>
             <div class="upperbox" v-show="!placeload">
-                <p>당신이 찍고싶은</p>
-                <p>인생샷을 찾아보세요</p>
+                <h2>당신이 찍고싶은</h2>
+                <h2>인생샷을 찾아보세요</h2>
             </div>
         </el-collapse-transition>
         <transition name="el-fade-in-linear">
             <el-row class='plates' v-show="!placeload">
                 <el-col :span="12" v-for="item in db.data" :key="item.Location" style='float: top'>
                     <el-card :body-style="{ padding: '0px' }">
-                        <img :src="item.url" style="max-height: 400px" v-on:click="switchview(item)">
-                        <div style="padding: 20px;">
-                            <span>{{ item.location }}</span>
-                            <div class="bottom clearfix">
+                        <img :src="item.url" style="max-width: 200px; max-height: 250px" v-on:click="switchview(item)">
+                        <div style="padding: 15px;">
+                            <span>{{ item.Location }}</span>
+                            <div>
                                 <time class="time">{{ item.Address }}</time>
                             </div>
                         </div>
@@ -61,6 +61,7 @@ export default {
         background: #F56C6C;
         color: #FFFFFF;
         font-size: 36px;
+        font-weight: bold;
     }
     img {
         max-height: 20%;
