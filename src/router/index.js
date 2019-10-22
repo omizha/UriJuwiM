@@ -6,23 +6,28 @@ Vue.use(VueRouter)
 const routes = [
     {
         path: '/',
-        name: 'home',
-        component: () => import('../views/Home.vue')
+        name: 'Dashboard',
+        component: () => import('../views/Dashboard.vue')
     },
     {
-        path: '/home',
-        name: 'home',
-        component: () => import('../views/Home.vue')
+        path: '/Dashboard',
+        name: 'Dashboard',
+        component: () => import('../views/Dashboard.vue')
     },
     {
-        path: '/search',
-        name: 'search',
-        component: () => import('../views/About.vue')
+        path: '/Explore',
+        name: 'Explore',
+        component: () => import('../views/Explore.vue')
     },
     {
-        path: '/map_view',
-        name: 'map',
-        component: () => import('../views/About.vue')
+        path: '/Search',
+        name: 'Search',
+        component: () => import('../views/Search.vue')
+    },
+    {
+        path: '/Share',
+        name: 'Share',
+        component: () => import('../views/Share.vue')
     }
 ]
 

@@ -10,19 +10,19 @@
 export default {
     data () {
         return {
-            navList: ['Home', 'Unknown', 'Search', 'Map']
+            navList: ['Dashboard', 'Explore', 'Search', 'Share']
         }
     }
 }
 </script>
 
 <style>
-footer {
+.el-footer {
     position: absolute;
     left: 0;
     bottom: 0;
     width: 100%;
-    padding: 15px 0;
+    padding: 0px !important;
     text-align: center;
     color: white;
     background: black;
@@ -31,7 +31,7 @@ footer {
 .navBox {
     position: relative;
     height : 60px;
-    padding : 15px;
+    padding-top : 20px;
     cursor: pointer;
 }
 
@@ -40,7 +40,7 @@ footer {
 }
 
 a {
-    font-size: 24px;
+    font-size: 18px;
     color : white;
     text-decoration: none !important;
 }
