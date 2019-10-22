@@ -6,11 +6,9 @@
 </template>
 
 <script>
-
 import Nav from './views/Nav.vue'
 
 export default {
-
     name: 'app',
     components: {
         Nav
@@ -20,10 +18,9 @@ export default {
 
 <style>
 html, body {
-    width :100%;
+    width : 100%;
     height : 100%;
-    overflow: hidden;
-
+    overflow-x: hidden;
     text-decoration: none !important;
 }
 
