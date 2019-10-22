@@ -49,7 +49,7 @@
         </el-collapse-transition>
         <el-collapse-transition>
             <div v-show="releasephotos">
-                <div v-for="item in info.PhotoDescription" :key="item.Location">
+                <div v-for="item in info.PhotoDescription" :key="item.url">
                     <h2 style="text-align: left">{{ item.Location }}</h2>
                     <p style="text-align: left">{{ item.CameraModel + '|' + item.CaptureDate }}</p>
                     <img :src="item.url" style="max-width: 100%">
