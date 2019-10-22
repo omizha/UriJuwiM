@@ -7,13 +7,6 @@
             </div>
         </el-collapse-transition>
         <el-collapse-transition>
-<!--            <div class='plates' v-show="!placeload">-->
-<!--                <div style='float: top' v-for="item in db.data" :key="item.Location" v-on:click="switchview(item)">-->
-<!--                    <el-card style="max-width: 300px; max-height: 300px" :src="item.url"></el-card>-->
-<!--                    <p>{{ item.Location }}</p>-->
-<!--                </div>-->
-<!--                -->
-<!--            </div>-->
             <el-row class='plates' v-show="!placeload">
                 <el-col :span="12" v-for="item in db.data" :key="item.Location" style='float: top'>
                     <el-card :body-style="{ padding: '0px' }">
