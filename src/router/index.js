@@ -10,22 +10,27 @@ const routes = [
         component: () => import('../views/Intro.vue')
     },
     {
-        path: '/Dashboard',
+        path: '/dashboard',
         name: 'Dashboard',
         component: () => import('../views/Dashboard.vue')
     },
     {
-        path: '/Explore',
+        path: '/dashboard/:cname',
+        name: 'Dashboard2',
+        component: () => import('../components/PlaceIntroduction.vue')
+    },
+    {
+        path: '/explore',
         name: 'Explore',
         component: () => import('../views/Explore.vue')
     },
     {
-        path: '/Search',
+        path: '/search',
         name: 'Search',
         component: () => import('../views/Search.vue')
     },
     {
-        path: '/Share',
+        path: '/share',
         name: 'Share',
         component: () => import('../views/Share.vue')
     }
