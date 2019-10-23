@@ -2,9 +2,11 @@
     <div>
         <el-collapse-transition>
             <div class="upperbox" v-show="!placeload">
-                <isabil style="width: 150px; height: 150px; float: left; padding-left: 35px"/>
-                <h2>당신이 찍고싶은</h2>
-                <h2>인생샷을 찾아보세요</h2>
+                <isabil id="upbox"/>
+                <div class="upperText">
+                    <p>당신이 찍고싶은</p><br>
+                    <p>인생샷을 찾아보세요</p>
+                </div>
             </div>
         </el-collapse-transition>
         <transition name="el-fade-in-linear">
@@ -60,12 +62,18 @@ export default {
 </script>
 
 <style scoped>
-    .upperbox {
-        background: #F56C6C;
+    .upperbox {        
+        width : 100%;
+        height : 200px;
+        top : 0;
+
+        background: #FFA492;
         color: #FFFFFF;
         text-align: right;
-        font-size: 32px;
+        font-size: 28px;
         font-weight: bold;
+
+        margin-bottom : 20px;
     }
     img {
         max-height: 20%;
@@ -79,4 +87,25 @@ export default {
         margin-bottom: 100px;
         max-height: 10%;
     }
+    #upbox {
+        width: 150px;
+        height: 150px;
+        float: left;
+        padding-left: 30px;
+        padding-top : 25px;
+        margin-right : -50px;
+        overflow: hidden;
+    }
+    .upperText {
+        height : 100%;
+        padding-top : 70px;
+        padding-right : 30px;
+    }
+    .upperText > p {
+        padding : 0px;
+        margin : 0px;
+
+        display : inline;
+    }
+
 </style>
