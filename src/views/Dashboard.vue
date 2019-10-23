@@ -13,7 +13,7 @@
             <el-row :gutter="4" class='plates' v-show="!placeload">
                 <el-col :span="12" v-for="item in db.data" :key="item.Location" style='float: top'>
                     <el-card class="cardBody" shadow="hover" :body-style="{ padding: '12px' }">
-                        <img :src="item.url" class="cardImage" v-on:click="switchview(item)">
+                        <img :src="'https://raw.githubusercontent.com/maemesoft/UriJuwiM/master/src/assets/img/thumbnail/' + item.thumbnail" class="cardImage" v-on:click="switchview(item)">
                         <div class="cardDescription">
                             <p class="cardLocation">{{ item.Location }}</p><br>
                             <IconPlace class="iconPlaceClass"></IconPlace>
@@ -51,6 +51,12 @@ export default {
             db: mock.__collections__,
             placeload: false,
             selectedplace: undefined
+        }
+    },
+    computed: {
+        returnURL (v) {
+            alert(v)
+            return '../assets/img/thumbnail/' + v
         }
     },
     methods: {
