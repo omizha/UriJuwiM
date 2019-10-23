@@ -42,7 +42,7 @@
                         </div>
                     </div>
                     <div class="brief">
-                        <el-button round style="background: #F56C6C; color: #FFFFFF" v-on:click="loadphotos()">촬영정보</el-button>
+                        <el-button round style="background: #F56C6C; color: #FFFFFF" v-on:click="loadPhotos()">촬영정보</el-button>
                     </div>
                 </div>
             </div>
@@ -57,7 +57,7 @@
                     <p style="text-align: left">{{ '키워드 : ' + item.Keyword }}</p>
                     <p>{{ item.Paragraph }}</p>
                 </div>
-                <el-button round style="background: #F56C6C; color: #FFFFFF" v-on:click="loadphotos()">뒤로가기</el-button>
+                <el-button round style="background: #F56C6C; color: #FFFFFF" v-on:click="loadPhotos()">뒤로가기</el-button>
             </div>
         </el-collapse-transition>
     </div>
@@ -86,11 +86,14 @@ export default {
         }
     },
     methods: {
-        loadphotos: function () {
+        loadPhotos: function () {
             this.releasephotos = !this.releasephotos
         }
     },
     computed: {
+    },
+    mounted () {
+        this.$store.dispatch('updatew3w', { word: this.info.W3W[0] })
     }
 }
 </script>
