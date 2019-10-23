@@ -84,7 +84,7 @@ export default {
             let geo = ''
             www.forward(this.$store.getters.getw3w).then((val) => {
                 geo = val.geometry
-                this.getLocationData(geo.Lat, geo.Lng)
+                // this.getLocationData(geo.Lat, geo.Lng)
             })
             return geo
         }
@@ -93,9 +93,9 @@ export default {
     },
     mounted () {
         window.addEventListener('resize', this.onResize)
+        this.loactionw3w()
     },
     beforeUpdate () {
-        this.loactionw3w()
     },
     beforeDestroy () {
         window.removeEventListener('resize', this.onResize)

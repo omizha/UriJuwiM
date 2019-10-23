@@ -82,7 +82,6 @@
                     </el-card>
                 </div>
                 <el-button class="redBtn" round style="background: #F56C6C; color: #FFFFFF" v-on:click="loadphotos()">뒤로가기</el-button>
-
             </div>
         </el-collapse-transition>
     </div>
@@ -118,8 +117,6 @@ export default {
         loadPhotos: function () {
             this.releasephotos = !this.releasephotos
         }
-    },
-    computed: {
     },
     mounted () {
         this.$store.dispatch('updatew3w', { word: this.info.W3W[0] })
