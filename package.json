@@ -15,7 +15,8 @@
     "vue": "^2.6.10",
     "vue-daum-map": "^1.0.15",
     "vue-router": "^3.0.6",
-    "vuex": "^3.0.1"
+    "vuex": "^3.0.1",
+    "w3w": "^0.2.2"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^4.0.0",
