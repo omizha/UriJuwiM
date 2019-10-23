@@ -101,7 +101,7 @@ JeongHunHa's Email - maemenaver@gmail.com
 
 ## 알려진 버그 (Known Issues)
 
-# Occasionally the button will behave abnormally.
+### Occasionally the button will behave abnormally.
 ![error](./reference/error.PNG)
 
 ## 문제 발생에 대한 해결책 (Troubleshooting)
@@ -112,6 +112,7 @@ And, if the problem reveal again, please contact to email(maemenaver@gmail.com)
 This open source software created by the Military Soldier Open SW Collective Education Program.
 
 ## 업데이트 정보 (Change Log)
+This is developing... Release as soon
 link : https://github.com/maemesoft/UriJuwiM/commits/master
 
 
