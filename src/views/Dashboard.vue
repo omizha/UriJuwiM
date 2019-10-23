@@ -12,7 +12,7 @@
         <transition name="el-fade-in-linear">
             <el-row :gutter="4" class='plates' v-show="!placeload">
                 <el-col :span="12" v-for="item in db.data" :key="item.Location" style='float: top'>
-                    <el-card class="cardBody" shadow="hover" :body-style="{ padding: '12px' }">
+                    <el-card v-bind:data-name="item.Location" @click="routeMove(this)" class="cardBody" shadow="hover" :body-style="{ padding: '12px' }">
                         <img :src="'https://raw.githubusercontent.com/maemesoft/UriJuwiM/master/src/assets/img/thumbnail/' + item.thumbnail" class="cardImage" v-on:click="switchview(item)">
                         <div class="cardDescription">
                             <p class="cardLocation">{{ item.Location }}</p><br>
@@ -38,6 +38,7 @@ import mock from '../assets/Mockup.json'
 import isabil from '../assets/svg/ic_itsability.svg'
 import intro from '@/components/PlaceIntroduction.vue'
 import IconPlace from '../assets/icon/ic_place_48px.svg'
+import router from '../router/index.js'
 
 export default {
     name: 'home',
@@ -50,7 +51,8 @@ export default {
         return {
             db: mock.__collections__,
             placeload: false,
-            selectedplace: undefined
+            selectedplace: undefined,
+            hoverLocation: null
         }
     },
     computed: {
@@ -62,7 +64,20 @@ export default {
     methods: {
         switchview: function (place) {
             this.selectedplace = place
-            this.placeload = !this.placeload
+
+            let key
+
+            for (key in this.db.data) {
+                console.log(this.db.data[key].Location)
+
+                if (this.db.data[key].Location === this.selectedplace.Location) {
+                    router.push({
+                        name: 'Dashboard2',
+                        params: { cname: key }
+                    })
+                }
+            }
+            // this.placeload = !this.placeload
         }
     }
 }
