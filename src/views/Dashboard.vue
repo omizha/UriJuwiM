@@ -2,6 +2,7 @@
     <div>
         <el-collapse-transition>
             <div class="upperbox" v-show="!placeload">
+                <isabil style="width: 150px; height: 150px; float: left; padding-left: 35px"/>
                 <h2>당신이 찍고싶은</h2>
                 <h2>인생샷을 찾아보세요</h2>
             </div>
@@ -33,12 +34,14 @@
 
 <script>
 import mock from '../assets/Mockup.json'
+import isabil from '../assets/svg/ic_itsability.svg'
 import intro from '@/components/PlaceIntroduction.vue'
 
 export default {
     name: 'home',
     components: {
-        intro
+        intro,
+        isabil
     },
     data () {
         return {
@@ -60,7 +63,8 @@ export default {
     .upperbox {
         background: #F56C6C;
         color: #FFFFFF;
-        font-size: 36px;
+        text-align: right;
+        font-size: 32px;
         font-weight: bold;
     }
     img {

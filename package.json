@@ -30,6 +30,7 @@
     "lint-staged": "^9.4.2",
     "pug": "^2.0.4",
     "vue-cli-plugin-element": "^1.0.1",
+    "vue-svg-loader": "^0.12.0",
     "vue-template-compiler": "^2.6.10"
   },
   "eslintConfig": {
