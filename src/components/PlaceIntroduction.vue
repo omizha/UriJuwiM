@@ -61,6 +61,9 @@
                             <el-button class="redBtn" round style="background: #F56C6C; color: #FFFFFF" v-on:click="loadphotos()">촬영정보</el-button>
                         </div>
                     </div>
+                    <div class="brief">
+                        <el-button round style="background: #F56C6C; color: #FFFFFF" v-on:click="loadPhotos()">촬영정보</el-button>
+                    </div>
                 </div>
             </div>
         </el-collapse-transition>
@@ -79,6 +82,7 @@
                     </el-card>
                 </div>
                 <el-button class="redBtn" round style="background: #F56C6C; color: #FFFFFF" v-on:click="loadphotos()">뒤로가기</el-button>
+
             </div>
         </el-collapse-transition>
     </div>
@@ -111,9 +115,14 @@ export default {
         }
     },
     methods: {
-        loadphotos: function () {
+        loadPhotos: function () {
             this.releasephotos = !this.releasephotos
         }
+    },
+    computed: {
+    },
+    mounted () {
+        this.$store.dispatch('updatew3w', { word: this.info.W3W[0] })
     }
 }
 </script>

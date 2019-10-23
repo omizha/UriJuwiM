@@ -29,6 +29,8 @@ export default {
         divApp.style.width = window.innerWidth
         divApp.style.height = parseInt(window.innerHeight) - 60 + 'px'
     },
+    updated () {
+    },
     beforeDestroy () {
         window.removeEventListener('resize', this.onResize)
     }

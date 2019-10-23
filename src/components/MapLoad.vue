@@ -13,6 +13,8 @@
 
 // 현 위치에 빨간 점 생기게
 import VueDaumMap from 'vue-daum-map'
+import wk from '@/assets/keyw3w.js'
+const www = require('w3w')(wk.key)
 
 export default {
     data () {
@@ -24,6 +26,8 @@ export default {
             libraries: [], // 추가로 불러올 라이브러리
             map: null, // 지도 객체. 지도가 로드되면 할당됨.
             currentPosition: { lat: 37.449891, lng: 126.786562 },
+            draggable: true,
+            scrollwheel: true,
 
             latLng: null, // kakao.maps.LatLng
             marker: null, // kakao.maps.Marker
@@ -75,13 +79,28 @@ export default {
 
             // 지도 중심좌표를 접속위치로 변경합니다
             this.map.setCenter(locPosition)
+        },
+        loactionw3w () {
+            let geo = ''
+            www.forward(this.$store.getters.getw3w).then((val) => {
+                geo = val.geometry
+                this.getLocationData(geo.Lat, geo.Lng)
+            })
+            return geo
         }
+    },
+    created () {
     },
     mounted () {
         window.addEventListener('resize', this.onResize)
     },
+    beforeUpdate () {
+        this.loactionw3w()
+    },
     beforeDestroy () {
         window.removeEventListener('resize', this.onResize)
+    },
+    computed: {
     }
 }
 </script>
