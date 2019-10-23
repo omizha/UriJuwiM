@@ -1,5 +1,5 @@
 <template>
-    <div style="margin-bottom: 100px">
+    <div style="margin-bottom: 56px">
         <el-collapse-transition>
             <div class="wrapper" v-show="!releasephotos">
                 <el-image id="imgbox" :src="info.url" :preview-src-list="[info.url]"></el-image>
@@ -92,10 +92,11 @@ import cloth from '../assets/svg/ic_clothes_48px.svg'
 import IconPlace from '../assets/icon/ic_place_48px.svg'
 import KakaoMap from '../components/MapLoad'
 import wk from '@/assets/keyw3w.js'
+import router from '../router/index.js'
+import mock from '../assets/Mockup.json'
 const www = require('w3w')(wk.key)
 
 export default {
-    props: ['info'],
     name: 'PlaceIntroduction',
     components: {
         nice,
@@ -107,8 +108,14 @@ export default {
     },
     data () {
         return {
-            releasephotos: false
+            releasephotos: false,
+            info: mock.__collections__.data,
+            cname: null
         }
+    },
+    created () {
+        this.cname = this.$route.params.cname
+        this.info = this.info[this.cname]
     },
     methods: {
         loadPhotos: function () {
