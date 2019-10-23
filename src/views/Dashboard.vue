@@ -10,15 +10,14 @@
             </div>
         </el-collapse-transition>
         <transition name="el-fade-in-linear">
-            <el-row class='plates' v-show="!placeload">
+            <el-row :gutter="4" class='plates' v-show="!placeload">
                 <el-col :span="12" v-for="item in db.data" :key="item.Location" style='float: top'>
-                    <el-card :body-style="{ padding: '0px' }">
-                        <img :src="item.url" style="max-width: 200px; max-height: 250px" v-on:click="switchview(item)">
-                        <div style="padding: 15px;">
-                            <span>{{ item.Location }}</span>
-                            <div>
-                                <time class="time">{{ item.Address }}</time>
-                            </div>
+                    <el-card class="cardBody" shadow="hover" :body-style="{ padding: '12px' }">
+                        <img :src="item.url" class="cardImage" v-on:click="switchview(item)">
+                        <div class="cardDescription">
+                            <p class="cardLocation">{{ item.Location }}</p><br>
+                            <IconPlace class="iconPlaceClass"></IconPlace>
+                            <p class="cardAdress">{{ item.Address }}</p>
                         </div>
                     </el-card>
                 </el-col>
@@ -38,12 +37,14 @@
 import mock from '../assets/Mockup.json'
 import isabil from '../assets/svg/ic_itsability.svg'
 import intro from '@/components/PlaceIntroduction.vue'
+import IconPlace from '../assets/icon/ic_place_48px.svg'
 
 export default {
     name: 'home',
     components: {
         intro,
-        isabil
+        isabil,
+        IconPlace
     },
     data () {
         return {
@@ -106,6 +107,42 @@ export default {
         margin : 0px;
 
         display : inline;
+    }
+
+    .cardBody {
+        height : 280px;
+    }
+
+    .cardImage {
+        height : 180px;
+        width : 180px;
+        object-fit: cover;
+        border-radius: 10%;
+    }
+
+    .cardDescription {
+        display : inline-block;
+        width:180px;
+        height : 60px;
+        text-align: left;
+    }
+
+    .cardDescription > p {
+        display : inline;
+    }
+
+    .cardDescription > .cardLocation {
+        font-size : 18px;
+        font-weight: bold;
+    }
+
+    .cardDescription > .iconPlaceClass {
+        width : 12px;
+        height : 12px;
+    }
+
+    .cardDescription > .cardAdress {
+        font-size : 12px;
     }
 
 </style>
