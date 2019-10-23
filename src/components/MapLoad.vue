@@ -13,10 +13,9 @@
 
 // 현 위치에 빨간 점 생기게
 import VueDaumMap from 'vue-daum-map'
-import wk from '@/assets/keyw3w.js'
-const www = require('w3w')(wk.key)
 
 export default {
+    props: ['isUser'],
     data () {
         return {
             appKey: 'ea759f9d1ec7daf12187874b7ad703a4', // 테스트용 appkey
@@ -45,7 +44,12 @@ export default {
             this.map = map
             let temp = this
             if (navigator.geolocation) { // GPS를 지원하면
+                if (this.$props.isUser) {
+                    let geo = this.$store.getters.getGeo
+                    console.log(isNaN(geo.lat))
+                }
                 navigator.geolocation.getCurrentPosition(function (position) {
+                    console.log(isNaN(position.coords.latitude))
                     temp.getLocationData(position.coords.latitude, position.coords.longitude)
                 }, function (error) {
                     console.error(error)
@@ -55,6 +59,10 @@ export default {
             }
         },
         getLocationData (lati, longi) {
+            if (isNaN(lati) || isNaN(longi)) {
+                console.error('옳지 않은 인자가 전달 되었습니다')
+                return
+            }
             this.currentPosition = { lat: lati, lng: longi }
             this.center = this.currentPosition
         },
@@ -79,23 +87,24 @@ export default {
 
             // 지도 중심좌표를 접속위치로 변경합니다
             this.map.setCenter(locPosition)
-        },
-        loactionw3w () {
-            let geo = ''
-            www.forward(this.$store.getters.getw3w).then((val) => {
-                geo = val.geometry
-                // this.getLocationData(geo.Lat, geo.Lng)
-            })
-            return geo
         }
     },
     created () {
     },
+    beforeMount () {
+    },
     mounted () {
         window.addEventListener('resize', this.onResize)
-        this.loactionw3w()
     },
     beforeUpdate () {
+        if (this.$props.isUser) {
+            let loc = this.$store.getters.getGeo
+            this.getLocationData(loc.lat, loc.lng)
+            this.displayMarker(loc, 'Here!')
+        } else {
+            this.getLocationData(37.449891, 126.786562)
+        }
+        this.$store.dispatch('updateGeo', { lat: 37.449891, lng: 126.786562 })
     },
     beforeDestroy () {
         window.removeEventListener('resize', this.onResize)

@@ -28,8 +28,8 @@ export default new Vuex.Store({
         setAddress: function (state, _address) {
             state.addressString = _address
         },
-        setGeo: function (state, val) {
-            state.geo = val
+        setGeo: function (state, payload) {
+            state.geo = { lat: payload.lat, lng: payload.lng }
         },
         setw3w: function (state, words) {
             state.w3w = words
@@ -43,7 +43,7 @@ export default new Vuex.Store({
             context.commit('setAddress', payload.address)
         },
         updateGeo (context, payload) {
-            context.commit('setGeo', payload.obj)
+            context.commit('setGeo', payload)
         },
         updatew3w (context, payload) {
             context.commit('setw3w', payload.word)

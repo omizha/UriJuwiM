@@ -10,7 +10,7 @@
                         <p id="Address">{{ info.Address }}</p>
                     </div>
                     <div class="mapwrapper">
-                        <KakaoMap></KakaoMap>
+                        <KakaoMap v-bind:isUser="true"></KakaoMap>
                     </div>
                     <div>
                         <el-col>
@@ -91,6 +91,8 @@ import camera from '../assets/svg/ic_photo_tip.svg'
 import cloth from '../assets/svg/ic_clothes_48px.svg'
 import IconPlace from '../assets/icon/ic_place_48px.svg'
 import KakaoMap from '../components/MapLoad'
+import wk from '@/assets/keyw3w.js'
+const www = require('w3w')(wk.key)
 
 export default {
     props: ['info'],
@@ -113,8 +115,13 @@ export default {
             this.releasephotos = !this.releasephotos
         }
     },
+    computed: {
+    },
     mounted () {
         this.$store.dispatch('updatew3w', { word: this.info.W3W[0] })
+        www.forward(this.$store.getters.getw3w).then((val) => {
+            this.$store.dispatch('updateGeo', val.geometry)
+        })
     }
 }
 </script>
