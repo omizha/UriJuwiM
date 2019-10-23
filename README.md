@@ -133,6 +133,7 @@ link : https://github.com/maemesoft/UriJuwiM/commits/master
 - [ ] 로그인 기능 구현
 ### 기타
 - [x] 인트로 화면 제작
+- [ ] 네비게이션 
 ### 문서 작성
 - [ ] 개발문서 제작
 - [ ] PPT 제작
