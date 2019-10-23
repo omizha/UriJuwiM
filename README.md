@@ -43,6 +43,41 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ## 파일 정보 및 목록 (File Manifest)
 
+```sh
+├─UriJuwiM
+│  │ README.md, .gitignore, package.json, vue.config.js, ...
+│  ├─ node_modules/vue-daum-map  <  (https://github.com/okchangwon/vue-daum-map)
+│  ├─ public
+│  │     index.html
+│  │     favicon.ico
+│  │     example.png // useless..?
+│  ├─ reference
+│  │     image files for README.md
+│  │
+│  ├─ src // Based Vue, App.vue and main.js ...
+│      ├─ assets
+│      │    ├─ icon // svg Vector files
+│      │    ├─ img // image files
+│      │    ├─ svg // svg Vector files (deprecated)
+│      │
+│      │
+│      ├─ components // componenets file
+│      ├─ plugins
+│      ├      element.js // element ui plugin (https://element.eleme.io/#/en-US)
+│      ├─ router
+│      │      index.js // manage vue-router
+│      ├─ store  
+│      │      index.js // manage vuex
+│      ├─ Views
+│      │      Intro.vue     //  if './' domain root, print intro and go to dashboard
+│      │      Nav.vue       //  Navigation bar
+│      │      Dashboard.vue //  './dashboard'
+│      │      Explore.vue   //  './explore'
+│      │      Search.vue    //  './search'
+│      │      Share.vue     //  './share'
+│      │
+```
+
 ### Theme Color Concept
 ![theme_color_1](./reference/theme_color_1.png)
 ![theme_color_2](./reference/theme_color_2.png)
@@ -66,7 +101,12 @@ JeongHunHa's Email - maemenaver@gmail.com
 
 ## 알려진 버그 (Known Issues)
 
+# Occasionally the button will behave abnormally.
+![error](./reference/error.PNG)
+
 ## 문제 발생에 대한 해결책 (Troubleshooting)
+Please restart the computer and server, sites.
+And, if the problem reveal again, please contact to email(maemenaver@gmail.com)
 
 ## 크레딧 (Credit)
 This open source software is a derivative project of Soongsil University YoloView and a project created by the Military Soldier Open SW Collective Education Program.
