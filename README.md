@@ -115,11 +115,26 @@ This open source software created by the Military Soldier Open SW Collective Edu
 This is developing... Release as soon
 link : https://github.com/maemesoft/UriJuwiM/commits/master
 
-
-
-
-
-
-
-
-
+## 개발 로드맵 (To-do List)
+### 대시보드
+- [ ] 한국관광공사 API 연동
+### 탐험
+- [x] 카카오맵 불러오기
+- [ ] 현재 위치 기능 구현
+- [ ] 마스킹 기능
+- [ ] 정적 이미지
+### 검색
+- [ ] 지역별 선택 후 맵으로 이동
+- [ ] 마커 누르면 카드설명 띄우기
+### 공유
+- [ ] 마이크로 SNS 구현
+- [ ] 글추가 및 삭제 구현
+- [ ] 글추가시 사진 업로드, 위치, 시간, 글, 아이디 저장
+- [ ] 로그인 기능 구현
+### 기타
+- [x] 인트로 화면 제작
+### 문서 작성
+- [ ] 개발문서 제작
+- [ ] PPT 제작
+- [ ] 백엔드 명세서 제작
+- [x] Github README.md 제작
