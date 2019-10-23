@@ -9,8 +9,8 @@
                     <p style="font-size: 28px">{{ info.Location }}</p>
                     <p style="font-size: 16px">{{ info.Address }}</p>
                 </div>
-                <div>
-                    아마도 카카오 맵이 들어갈 자리
+                <div class="mapwrapper">
+                    <KakaoMap></KakaoMap>
                 </div>
                 <div>
                     <div class="brief">
@@ -68,6 +68,7 @@ import nice from '../assets/svg/ic_time_daytime_48px.svg'
 import bad from '../assets/svg/ic_calendar_notsuggest.svg'
 import camera from '../assets/svg/ic_photo_tip.svg'
 import cloth from '../assets/svg/ic_clothes_48px.svg'
+import KakaoMap from '../components/MapLoad'
 
 export default {
     props: ['info'],
@@ -76,7 +77,8 @@ export default {
         nice,
         bad,
         camera,
-        cloth
+        cloth,
+        KakaoMap
     },
     data () {
         return {
@@ -121,5 +123,9 @@ export default {
 .sorttext {
     float: left;
     text-align: left;
+}
+.mapwrapper {
+    max-width: 100%;
+    height: 300px
 }
 </style>
