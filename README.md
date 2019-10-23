@@ -100,7 +100,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>
 JeongHunHa's Email - maemenaver@gmail.com
 
 ## 알려진 버그 (Known Issues)
-
+### Sometimes maps don't work properly.
 ### Occasionally the button will behave abnormally.
 ![error](./reference/error.PNG)
 
