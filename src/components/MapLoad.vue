@@ -95,7 +95,6 @@ export default {
             return this.$store.getters.getGeo
         },
         wloca: function () {
-            console.log(this.$props.located)
             return this.$props.located
         }
     }
