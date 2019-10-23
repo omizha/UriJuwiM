@@ -29,6 +29,7 @@
         "PlaceLocationDescription": "63빌딩 전망대",
         "url": "https://firebasestorage.googleapis.com/v0/b/itsability-272be.appspot.com/o/image%2F63%EC%95%84%ED%8A%B8%2F63%EC%95%84%ED%8A%B8_1.jpg?alt=media&token=327bc55b-d0a7-4d8d-9cb4-5a6439ddd3a4",
         "Address": "서울특별시 영등포구 63로 50",
+        "thumbnail": "thum_63아트_1.jpg",
         "PlaceDescription": {
           "NotRecommandTime": [
             "날씨 흐린날",
@@ -69,6 +70,7 @@
         "PlaceLocationDescription": "7호선 숭실대입구역 3번 출구 도보 10분",
         "url": "https://firebasestorage.googleapis.com/v0/b/itsability-272be.appspot.com/o/image%2Fitsability%20%EC%82%AC%EB%AC%B4%EC%8B%A4%2Fitsability%20%EC%82%AC%EB%AC%B4%EC%8B%A4_1.jpg?alt=media&token=e9fd227a-5bc7-4565-833d-0a08753843d7",
         "Address": "서울특별시 동작구 상도로 369 숭실대학교 창신관",
+        "thumbnail": "thum_itsability 사무실_1.jpg",
         "PlaceDescription": {
           "PhotoTime": [
             "Daytime",
@@ -123,6 +125,7 @@
         "PlaceLocationDescription": "7호선 고속터미널역 도보 15분",
         "url": "https://firebasestorage.googleapis.com/v0/b/itsability-272be.appspot.com/o/image%2F%EB%B0%98%ED%8F%AC%ED%95%9C%EA%B0%95%EA%B3%B5%EC%9B%90%2F%EB%B0%98%ED%8F%AC%ED%95%9C%EA%B0%95%EA%B3%B5%EC%9B%90_1.jpg?alt=media&token=f6d51173-7ba7-49e0-ba96-a9278d51cf80",
         "Address": "서울특별시 서초구 반포2동 650-1",
+        "thumbnail": "thum_반포한강공원_1.jpg",
         "PlaceDescription": {
           "NotRecommandTime": [
             "비 오는 날",
@@ -177,6 +180,7 @@
           "그저께.잡지.고음"
         ],
         "Location": "마당플라워 카페",
+        "thumbnail": "thum_마당플라워 카페_1.jpg",
         "tourAPI": "",
         "PhotoDescription": [
           {
@@ -228,6 +232,7 @@
         ],
         "Location": "뚜스뚜스",
         "tourAPI": "",
+        "thumbnail": "thum_뚜스뚜스_1.jpg",
         "PhotoDescription": [
           {
             "CaptureDate": "2019년 8월 18일",
@@ -260,6 +265,7 @@
         "PlaceLocationDescription": "2호선 홍대입구역 9번출구 도보 6분",
         "url": "https://firebasestorage.googleapis.com/v0/b/itsability-272be.appspot.com/o/image%2FLIZE%26MilkCocoa%2FLIZE%26MilkCocoa_1.jpg?alt=media&token=dc9a6ace-b265-4b5e-88d3-ff6ce8c1ea99",
         "Address": "서울특별시 마포구 서교동 358-112",
+        "thumbnail": "thum_LIZE&MilkCocoa_1.jpg",
         "PlaceDescription": {
           "NotRecommandTime": [
             "비 오는 날",
@@ -310,6 +316,7 @@
         ],
         "Location": "아트몬스터 강남",
         "tourAPI": "",
+        "thumbnail": "thum_아트몬스터 강남_1.jpg",
         "PhotoDescription": [
           {
             "CameraModel": "iPhone Xs",
@@ -350,6 +357,7 @@
           "기다.스타일.최신형"
         ],
         "Location": "롯데월드 아쿠아리움",
+        "thumbnail": "thum_롯데월드 아쿠아리움_1.jpg",
         "tourAPI": "http://api.visitkorea.or.kr/openapi/service/rest/KorService/detailIntro?ServiceKey=인증키&contentTypeId=14&contentId=2476731&MobileOS=ETC&MobileApp=TourAPI3.0_Guide&introYN=Y",
         "PhotoDescription": [
           {
@@ -377,6 +385,7 @@
         "PlaceLocationDescription": "2호선 서울대입구역 2번출구 도보 4분",
         "url": "https://firebasestorage.googleapis.com/v0/b/itsability-272be.appspot.com/o/image%2F%EB%A1%9C%EC%A7%80%EB%B8%8C%EB%A6%AD%2F%EB%A1%9C%EC%A7%80%EB%B8%8C%EB%A6%AD_1.png?alt=media&token=0c021498-2b37-4e9c-9e8a-1e589552dd2c",
         "Address": "서울특별시 관악구 남부순환로 226길 23-10",
+        "thumbnail": "thum_로지브릭_1.png",
         "PlaceDescription": {
           "PhotoTime": [
             "Daytime",
@@ -420,6 +429,7 @@
         "PlaceLocationDescription": "2호선 강남역 11번출구 도보 3분",
         "url": "https://firebasestorage.googleapis.com/v0/b/itsability-272be.appspot.com/o/image%2F%EC%9B%90%EC%9D%B8%EC%96%B4%EB%B0%80%EB%A6%AC%EC%96%B8%2F%EC%9B%90%EC%9D%B8%EC%96%B4%EB%B0%80%EB%A6%AC%EC%96%B8_1.jpg?alt=media&token=8000c0f3-1001-4c86-8f34-6e9e569c249e",
         "Address": "서울특별시 강남구 강남대로 96길 20",
+        "thumbnail": "thum_원인어밀리언_1.jpg",
         "PlaceDescription": {
           "NotRecommandTime": [
             "손님이 몰리는 시간",
@@ -451,6 +461,7 @@
           "끝났다.신난.당당한"
         ],
         "Location": "숭실대학교",
+        "thumbnail": "thum_숭실대학교_1.jpg",
         "tourAPI": "",
         "PhotoDescription": [
           {
@@ -491,6 +502,7 @@
         "PlaceLocationDescription": "롯데월드 어드벤처, 매직아일랜드",
         "url": "https://firebasestorage.googleapis.com/v0/b/itsability-272be.appspot.com/o/image%2F%EB%A1%AF%EB%8D%B0%EC%9B%94%EB%93%9C%2F%EB%A1%AF%EB%8D%B0%EC%9B%94%EB%93%9C_1.jpg?alt=media&token=272dc52c-407e-44f8-80d8-3ff503a55739",
         "Address": "서울특별시 송파구 올림픽로 300",
+        "thumbnail": "thum_롯데월드_1.jpg",
         "PlaceDescription": {
           "PhotoTime": [
             "Night",
@@ -539,6 +551,7 @@
       },
       "boM1GQJ782abaUeV0m98": {
         "Location": "아크앤북",
+        "thumbnail": "thum_아크앤북_1.jpg",
         "tourAPI": "http://api.visitkorea.or.kr/openapi/service/rest/KorService/detailIntro?ServiceKey=인증키&contentTypeId=38&contentId=2618716&MobileOS=ETC&MobileApp=TourAPI3.0_Guide&introYN=Y",
         "PhotoDescription": [
           {
@@ -598,6 +611,7 @@
           }
         ],
         "PlaceLocationDescription": "스타필드 코엑스 몰 B1F 에스컬레이터 앞",
+        "thumbnail": "thum_별마당도서관_1.jpg",
         "url": "https://firebasestorage.googleapis.com/v0/b/itsability-272be.appspot.com/o/image%2F%EB%B3%84%EB%A7%88%EB%8B%B9%EB%8F%84%EC%84%9C%EA%B4%80%2F%EB%B3%84%EB%A7%88%EB%8B%B9%EB%8F%84%EC%84%9C%EA%B4%80_1.jpg?alt=media&token=a4c7eb70-5dad-4f78-b897-246c5abb245a",
         "Address": "서울특별시 강남구 영동대로 512  ",
         "PlaceDescription": {
@@ -656,6 +670,7 @@
         ],
         "Location": "케이크팝",
         "tourAPI": "",
+        "thumbnail": "thum_케이크팝_1.jpg",
         "ARRoomNum": 12,
         "PhotoDescription": [
           {
@@ -673,6 +688,7 @@
         "PlaceLocationDescription": "2호선 홍대입구역 9번출구 도보 7분",
         "url": "https://firebasestorage.googleapis.com/v0/b/itsability-272be.appspot.com/o/image%2F943%20%ED%82%B9%EC%8A%A4%ED%81%AC%EB%A1%9C%EC%8A%A4%2F943%20%ED%82%B9%EC%8A%A4%ED%81%AC%EB%A1%9C%EC%8A%A4_1.jpg?alt=media&token=414792e5-cf9c-48a8-ab79-b70f3716635d",
         "Address": "서울특별시 마포구 양화로16길 24",
+        "thumbnail": "thum_943 킹스크로스_1.jpg",
         "PlaceDescription": {
           "NotRecommandTime": [
             "해가 지고 난 후",
