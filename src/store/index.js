@@ -7,7 +7,7 @@ export default new Vuex.Store({
     state: {
         addressString: '',
         w3w: '',
-        geo: undefined,
+        geo: { lat: 37.449891, lng: 126.786562 },
         mapobj: undefined
     },
     getters: {
@@ -34,8 +34,8 @@ export default new Vuex.Store({
         setw3w: function (state, words) {
             state.w3w = words
         },
-        setKakao: function (state, ob) {
-            state.mapobj = ob
+        setKakao: function (state, payload) {
+            state.mapobj = payload
         }
     },
     actions: {
@@ -47,6 +47,9 @@ export default new Vuex.Store({
         },
         updatew3w (context, payload) {
             context.commit('setw3w', payload.word)
+        },
+        takeKakaoMap (context, payload) {
+            context.commit('setKakao', payload)
         }
     },
     modules: {

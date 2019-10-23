@@ -13,9 +13,11 @@
 
 // 현 위치에 빨간 점 생기게
 import VueDaumMap from 'vue-daum-map'
+import wk from '@/assets/keyw3w.js'
+const www = require('w3w')(wk.key)
 
 export default {
-    props: ['isUser'],
+    props: ['located'],
     data () {
         return {
             appKey: 'ea759f9d1ec7daf12187874b7ad703a4', // 테스트용 appkey
@@ -25,8 +27,8 @@ export default {
             libraries: [], // 추가로 불러올 라이브러리
             map: null, // 지도 객체. 지도가 로드되면 할당됨.
             currentPosition: { lat: 37.449891, lng: 126.786562 },
-            draggable: true,
-            scrollwheel: true,
+            draggable: false,
+            scrollwheel: false,
 
             latLng: null, // kakao.maps.LatLng
             marker: null, // kakao.maps.Marker
@@ -44,12 +46,7 @@ export default {
             this.map = map
             let temp = this
             if (navigator.geolocation) { // GPS를 지원하면
-                if (this.$props.isUser) {
-                    let geo = this.$store.getters.getGeo
-                    console.log(isNaN(geo.lat))
-                }
                 navigator.geolocation.getCurrentPosition(function (position) {
-                    console.log(isNaN(position.coords.latitude))
                     temp.getLocationData(position.coords.latitude, position.coords.longitude)
                 }, function (error) {
                     console.error(error)
@@ -60,56 +57,47 @@ export default {
         },
         getLocationData (lati, longi) {
             if (isNaN(lati) || isNaN(longi)) {
-                console.error('옳지 않은 인자가 전달 되었습니다')
+                console.error('올바르지 않은 인자가 전달 되었습니다')
                 return
             }
             this.currentPosition = { lat: lati, lng: longi }
             this.center = this.currentPosition
         },
-        displayMarker (locPosition, message) {
-            // 마커를 생성합니다
-            var marker = this.$refs.getMarker({
-                map: this.map,
-                position: locPosition
-            })
+        displayMarker () {
+            let parser = this.wloca
 
-            var iwContent = message // 인포윈도우에 표시할 내용
-            var iwRemoveable = true
+            for (let i = 0; i < parser.length; ++i) {
+                www.forward(parser[i]).then((val) => {
+                    let geo = val.geometry
+                    let angle = new window.kakao.maps.LatLng(geo.lat, geo.lng)
 
-            // 인포윈도우를 생성합니다
-            var infowindow = this.$refs.getInfoWindow({
-                content: iwContent,
-                removable: iwRemoveable
-            })
-
-            // 인포윈도우를 마커위에 표시합니다
-            infowindow.open(this.map, marker)
-
-            // 지도 중심좌표를 접속위치로 변경합니다
-            this.map.setCenter(locPosition)
+                    var marker = new window.kakao.maps.Marker({
+                        map: this.map,
+                        position: angle
+                    })
+                    marker.getMap()
+                    if (!i) {
+                        this.getLocationData(geo.lat, geo.lng)
+                    }
+                })
+            }
         }
-    },
-    created () {
-    },
-    beforeMount () {
     },
     mounted () {
         window.addEventListener('resize', this.onResize)
-    },
-    beforeUpdate () {
-        if (this.$props.isUser) {
-            let loc = this.$store.getters.getGeo
-            this.getLocationData(loc.lat, loc.lng)
-            this.displayMarker(loc, 'Here!')
-        } else {
-            this.getLocationData(37.449891, 126.786562)
-        }
-        this.$store.dispatch('updateGeo', { lat: 37.449891, lng: 126.786562 })
+        setTimeout(() => { if (this.wloca.length) { this.displayMarker() } }, 330)
     },
     beforeDestroy () {
         window.removeEventListener('resize', this.onResize)
     },
     computed: {
+        geocode: function () {
+            return this.$store.getters.getGeo
+        },
+        wloca: function () {
+            console.log(this.$props.located)
+            return this.$props.located
+        }
     }
 }
 </script>

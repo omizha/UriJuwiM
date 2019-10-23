@@ -9,9 +9,11 @@
                         <IconPlace class="iconPlaceClass"></IconPlace>
                         <p id="Address">{{ info.Address }}</p>
                     </div>
-                    <div class="mapwrapper">
-                        <KakaoMap v-bind:isUser="true"></KakaoMap>
-                    </div>
+                    <el-collapse-transition>
+                        <div class="mapwrapper">
+                            <KakaoMap v-bind:located="info.W3W"></KakaoMap>
+                        </div>
+                    </el-collapse-transition>
                     <div>
                         <el-col>
                             <el-card shadow="hover" class="cards">
@@ -202,7 +204,7 @@ export default {
 
 .mapwrapper {
     max-width: 100%;
-    height: 200px;
+    height: 500px;
     border-radius: 5%;
     overflow: hidden;
     margin-bottom : 20px;

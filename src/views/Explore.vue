@@ -1,7 +1,7 @@
 <template lang="pug">
     .explore
         el-button(type="primary", icon="el-icon-search", circle, @click="currentLocation")
-        MapLoad(v-bind:isUser="false")
+        MapLoad(v-bind:located="false")
 </template>
 
 <script>
