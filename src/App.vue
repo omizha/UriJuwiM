@@ -15,7 +15,7 @@ export default {
     },
     methods: {
         onResize (event) {
-            var divApp = document.getElementById('app')
+            let divApp = document.getElementById('app')
 
             divApp.style.width = window.innerWidth
             divApp.style.height = parseInt(window.innerHeight) - 60 + 'px'
@@ -24,7 +24,7 @@ export default {
     mounted () {
         window.addEventListener('resize', this.onResize)
 
-        var divApp = document.getElementById('app')
+        let divApp = document.getElementById('app')
 
         divApp.style.width = window.innerWidth
         divApp.style.height = parseInt(window.innerHeight) - 60 + 'px'

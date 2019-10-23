@@ -47,7 +47,9 @@
       "indent": [
         "error",
         4
-      ]
+      ],
+      "no-trailing-spaces": "off",
+      "no-unused-vars": "off"
     },
     "parserOptions": {
       "parser": "babel-eslint"
