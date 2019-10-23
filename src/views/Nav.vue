@@ -2,16 +2,25 @@
     el-footer(class="footer")
         el-col(:span="6" v-for="(navKey) in navList" v-bind:key="navKey.id")
             .grid-content
-                router-link(:to="navKey")
+                router-link(:to="{ name: navKey }")
                     .navBox {{ navKey }}
 </template>
 
 <script>
+
+import iconHome from '../assets/icon/ic_map_48px.svg'
+import iconExplore from '../assets/icon/Explorer.svg'
+import iconSearch from '../assets/icon/dp_convert/ic_bottom_search_24dp.svg'
+import iconShare from '../assets/icon/Share.svg'
+
 export default {
     data () {
         return {
             navList: ['Dashboard', 'Explore', 'Search', 'Share']
         }
+    },
+    components: {
+        iconHome, iconExplore, iconSearch, iconShare
     }
 }
 </script>
@@ -24,8 +33,7 @@ export default {
     width: 100%;
     padding: 0 !important;
     text-align: center;
-    color: white;
-    background: black;
+    background: white;
 
     z-index: 999;
 }
@@ -44,7 +52,7 @@ export default {
 
 a {
     font-size: 18px;
-    color : white;
+    color : #FF7E5F;
     text-decoration: none !important;
 }
 
