@@ -20,6 +20,3 @@ yarn-error.log*
 *.njsproj
 *.sln
 *.sw?
-
-# Extra config of Vue project
-vue.config.js
