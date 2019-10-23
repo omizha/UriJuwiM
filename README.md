@@ -109,10 +109,10 @@ Please restart the computer and server, sites.
 And, if the problem reveal again, please contact to email(maemenaver@gmail.com)
 
 ## 크레딧 (Credit)
-This open source software is a derivative project of Soongsil University YoloView and a project created by the Military Soldier Open SW Collective Education Program.
+This open source software created by the Military Soldier Open SW Collective Education Program.
 
 ## 업데이트 정보 (Change Log)
-
+link : https://github.com/maemesoft/UriJuwiM/commits/master
 
 
 
