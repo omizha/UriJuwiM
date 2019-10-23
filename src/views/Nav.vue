@@ -18,7 +18,7 @@ export default {
 
 <style>
 .footer {
-    position: absolute;
+    position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -26,6 +26,8 @@ export default {
     text-align: center;
     color: white;
     background: black;
+
+    z-index: 999;
 }
 
 .navBox {
