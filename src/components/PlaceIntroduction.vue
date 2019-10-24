@@ -60,7 +60,7 @@
                             </el-card>
                         </el-col>
                         <div class="brief">
-                            <el-button class="redBtn" round style="background: #F56C6C; color: #FFFFFF" v-on:click="loadPhotos()">촬영정보</el-button>
+                            <el-button class="redBtn" round style="background: #F56C6C; color: #FFFFFF" v-on:click="loadPhotos">촬영정보</el-button>
                         </div>
                     </div>
                 </div>
@@ -80,7 +80,7 @@
                         <p style="text-align: left">{{ item.Paragraph }}</p>
                     </el-card>
                 </div>
-                <el-button class="redBtn" round style="background: #F56C6C; color: #FFFFFF" v-on:click="loadPhotos()">뒤로가기</el-button>
+                <el-button class="redBtn" round style="background: #F56C6C; color: #FFFFFF" v-on:click="loadPhotos">뒤로가기</el-button>
             </div>
         </el-collapse-transition>
     </div>

@@ -62,6 +62,10 @@ export default {
             this.center = this.currentPosition
         },
         displayMarker () {
+            // let imageSrc = './assets/ic_map_pin.png'
+            // let imageSize = new window.kakao.maps.Size(29, 48)
+            // let imageOption = { offset: new window.kakao.maps.Point(27, 48) }
+            // let markerImage = new window.kakao.maps.MarkerImage(imageSrc, imageSize, imageOption)
             let parser = this.wloca
 
             for (let i = 0; i < parser.length; ++i) {
