@@ -48,7 +48,8 @@
         "error",
         4
       ],
-      "no-trailing-spaces": "off"
+      "no-trailing-spaces": "off",
+      "quotes": ["off", "single"]
     },
     "parserOptions": {
       "parser": "babel-eslint"
