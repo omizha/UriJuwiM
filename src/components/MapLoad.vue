@@ -10,8 +10,6 @@
 </template>
 
 <script>
-
-// 현 위치에 빨간 점 생기게
 import VueDaumMap from 'vue-daum-map'
 import wk from '@/assets/keyw3w.js'
 const www = require('w3w')(wk.key)
@@ -84,7 +82,6 @@ export default {
         },
         aroundSeoul () {
             let datas = this.entireMarkers
-            console.log(datas)
 
             for (let i = 0; i < datas.length; ++i) {
                 www.forward(datas[i][0]).then((res) => {
@@ -109,8 +106,8 @@ export default {
                     var temp = this
                     // 마커에 클릭이벤트를 등록합니다
                     window.kakao.maps.event.addListener(marker, 'click', function () {
-                        // 마커 위에 인포윈도우를 표시합니다
-                        infowindow.open(temp.map, marker)
+                        console.log(datas[i][3])
+                        temp.$router.push('/dashboard/' + datas[i][3])
                     })
                 })
             }
