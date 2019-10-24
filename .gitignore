@@ -23,4 +23,5 @@ yarn-error.log*
 
 # API key files
 keyw3w.js
+fireconfig.js
 certbot-auto
