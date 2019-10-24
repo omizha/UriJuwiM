@@ -5,6 +5,7 @@
         :mapTypeId="mapTypeId",
         :libraries="libraries",
         @load="onLoad",
+        @dragend="endDrag",
         class="map",
         ref="refMap")
 </template>
@@ -19,12 +20,12 @@ export default {
     data () {
         return {
             appKey: 'ea759f9d1ec7daf12187874b7ad703a4', // 테스트용 appkey
-            center: { lat: 37.449891, lng: 126.786562 }, // 지도의 중심 좌표
-            level: 3, // 지도의 레벨(확대, 축소 정도),
+            center: { lat: 37.52922231983619, lng: 126.96517744007956 }, // 지도의 중심 좌표
+            level: 8, // 지도의 레벨(확대, 축소 정도),
             mapTypeId: VueDaumMap.MapTypeId.NORMAL, // 맵 타입
             libraries: [], // 추가로 불러올 라이브러리
             map: null, // 지도 객체. 지도가 로드되면 할당됨.
-            currentPosition: { lat: 37.449891, lng: 126.786562 },
+            currentPosition: { lat: null, lng: null },
             draggable: false,
             scrollwheel: false,
 
@@ -52,6 +53,9 @@ export default {
             } else {
                 this.$message.error('GPS를 지원하지 않습니다')
             }
+        },
+        endDrag () {
+            console.log({ center: this.center, level: this.level })
         },
         getLocationData (lati, longi) {
             if (isNaN(lati) || isNaN(longi)) {
@@ -86,6 +90,7 @@ export default {
             }
         },
         aroundSeoul () {
+            let thisBind = this
             let datas = this.entireMarkers
 
             for (let i = 0; i < datas.length; ++i) {
@@ -127,14 +132,17 @@ export default {
                     this.getLocationData(position.coords.latitude, position.coords.longitude)
                 }, function (error) {
                     console.error(error)
+                    if (error.code === 1) {
+                        thisBind.$message.error('해당 기기에서는 현재위치를 지원하지 않습니다.')
+                    }
                 }, { })
             } else {
                 // Seoul
                 this.getLocationData(75.05733500000002, 200.997985)
-                this.$message.error('GPS를 지원하지 않습니다')
+                thisBind.$message.error('GPS를 지원하지 않습니다')
             }
 
-            this.map.setLevel(9)
+            this.map.setLevel(8)
         }
     },
     mounted () {
