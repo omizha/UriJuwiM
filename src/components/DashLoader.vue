@@ -92,7 +92,7 @@ export default {
             this.selectedplace = place
 
             for (let key in this.db.data) {
-                console.log(this.db.data[key].Location)
+                // console.log(this.db.data[key].Location)
 
                 if (this.db.data[key].Location === this.selectedplace.Location) {
                     this.$router.push({
