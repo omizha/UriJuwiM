@@ -5,7 +5,7 @@
             <el-row :gutter="4" class='plates' v-show="!placeload">
                 <div v-if="!this.getTarget">
                     <el-col :span="12" v-for="item in db.data" :key="item.Address" style='float: top'>
-                        <el-card v-bind:data-name="item.Location" @click="routeMove(this)" class="cardBody" shadow="hover" :body-style="{ padding: '12px' }">
+                        <el-card v-bind:data-name="item.Location" @click="switchview(item)" class="cardBody" shadow="hover" :body-style="{ padding: '12px' }">
                             <img :src="'https://raw.githubusercontent.com/maemesoft/UriJuwiM/master/src/assets/img/thumbnail/' + item.thumbnail" class="cardImage" v-on:click="switchview(item)">
                             <div class="cardDescription">
                                 <p class="cardLocation">{{ item.Location }}</p><br>
@@ -17,7 +17,7 @@
                 </div>
                 <div v-else>
                     <el-col :span="12" v-for="item in this.indexer" :key="item.Address" style='float: top'>
-                        <el-card v-bind:data-name="item.Location" @click="routeMove(this)" class="cardBody" shadow="hover" :body-style="{ padding: '12px' }">
+                        <el-card v-bind:data-name="item.Location" @click="switchview(item)" class="cardBody" shadow="hover" :body-style="{ padding: '12px' }">
                             <img :src="'https://raw.githubusercontent.com/maemesoft/UriJuwiM/master/src/assets/img/thumbnail/' + item.thumbnail" class="cardImage" v-on:click="switchview(item)">
                             <div class="cardDescription">
                                 <p class="cardLocation">{{ item.Location }}</p><br>
@@ -117,6 +117,10 @@ export default {
         width : 180px;
         object-fit: cover;
         border-radius: 10%;
+    }
+
+    .cardImage:hover {
+        cursor: pointer;
     }
 
     .cardDescription {
