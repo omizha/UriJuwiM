@@ -117,8 +117,8 @@ link : https://github.com/maemesoft/UriJuwiM/commits/master
 
 ## 개발 로드맵 (To-do List)
 ### 대시보드
-- [ ] 한국관광공사 API 연동
-- [ ] 마커 이미지 
+~~- [ ] 한국관광공사 API 연동~~
+- [ ] 마커 이미지 변경
 ### 탐험
 - [x] 카카오맵 불러오기
 - [ ] 현재 위치 기능 구현
@@ -134,7 +134,7 @@ link : https://github.com/maemesoft/UriJuwiM/commits/master
 - [ ] 로그인 기능 구현
 ### 기타
 - [x] 인트로 화면 제작
-- [ ] 네비게이션 
+~~- [ ] 네비게이션 개선~~
 ### 문서 작성
 - [ ] 개발문서 제작
 - [ ] PPT 제작
