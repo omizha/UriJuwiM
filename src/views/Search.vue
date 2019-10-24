@@ -2,9 +2,12 @@
     <div>
         <div v-show="!board">
             <div class="upperbox">
-                <isabil style="width: 150px; height: 150px; float: left; padding-left: 35px"/>
-                <h2>당신의 인생샷 스팟</h2>
-                <h2>우리가 찾아줄게요</h2>
+                <isabil id="upbox"/>
+                <div class="upperText">
+                    <p>당신의 인생샷 스팟</p>
+                    <br>
+                    <p>우리가 찾아줄게요</p>
+                </div>
             </div>
             <div class="seoul">
                 <h2>서울특별시</h2>
@@ -21,6 +24,7 @@
 <script>
 import isabil from '../assets/svg/ic_itsability.svg'
 import DashLoad from '@/components/DashLoader.vue'
+import mock from '../assets/Mockup.json'
 
 export default {
     components: {
@@ -30,14 +34,13 @@ export default {
     data () {
         return {
             board: false,
-            kword: ''
+            kword: '',
+            db: mock.__collections__
         }
     },
     computed: {
         getSeoul: function () {
-            return ['강서구', '양천구', '구로구', '금천구', '영등포구', '동작구', '관악구', '서초구', '강남구', '송파구',
-                '강동구', '마포구', '용산구', '중구', '서대문구', '은평구', '종로구', '성북구', '강북구', '동대문구',
-                '성동구', '광진구', '중랑구', '노원구', '도봉구']
+            return ['영등포구', '동작구', '관악구', '서초구', '강남구', '송파구', '마포구', '중구', '종로구']
         }
     },
     methods: {
@@ -52,11 +55,37 @@ export default {
 
 <style>
     .upperbox {
-        background: #F56C6C;
+        width : 100%;
+        height : 200px;
+        top : 0;
+
+        background: #FFA492;
         color: #FFFFFF;
         text-align: right;
-        font-size: 32px;
+        font-size: 28px;
         font-weight: bold;
+
+        margin-bottom : 20px;
+    }
+    #upbox {
+        width: 150px;
+        height: 150px;
+        float: left;
+        padding-left: 30px;
+        padding-top : 25px;
+        margin-right : -50px;
+        overflow: hidden;
+    }
+    .upperText {
+        height : 100%;
+        padding-top : 70px;
+        padding-right : 30px;
+    }
+    .upperText > p {
+        padding : 0px;
+        margin : 0px;
+
+        display : inline;
     }
 
     .seoul {

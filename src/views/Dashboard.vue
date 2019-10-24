@@ -44,6 +44,21 @@ export default {
         returnURL (v) {
             alert(v)
             return '../assets/img/thumbnail/' + v
+        },
+        indexer: function () {
+            let res = []
+            let matcher = this.getTarget
+
+            if (matcher) {
+                var mother = this.db.data
+                for (let item in mother) {
+                    if (mother[item].Address.indexOf(matcher) > -1) {
+                        res.push(mother[item])
+                    }
+                }
+            }
+
+            return res
         }
     },
     methods: {
