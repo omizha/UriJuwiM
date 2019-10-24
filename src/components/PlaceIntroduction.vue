@@ -1,6 +1,5 @@
 <template>
     <div style="margin-bottom: 56px">
-        <uppernav></uppernav>
         <el-collapse-transition>
             <div class="wrapper" v-show="!releasephotos">
                 <el-image id="imgbox" :src="info.url" :preview-src-list="[info.url]"></el-image>
@@ -96,7 +95,6 @@ import IconPlace from '../assets/icon/ic_place_48px.svg'
 import KakaoMap from '../components/MapLoad'
 import wk from '@/assets/keyw3w.js'
 import mock from '../assets/Mockup.json'
-import uppernav from '../components/UpperNav.vue'
 const www = require('w3w')(wk.key)
 
 export default {
@@ -107,8 +105,7 @@ export default {
         camera,
         cloth,
         KakaoMap,
-        IconPlace,
-        uppernav
+        IconPlace
     },
     data () {
         return {
