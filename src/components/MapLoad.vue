@@ -62,10 +62,10 @@ export default {
             this.center = this.currentPosition
         },
         displayMarker () {
-            // let imageSrc = './assets/ic_map_pin.png'
-            // let imageSize = new window.kakao.maps.Size(29, 48)
-            // let imageOption = { offset: new window.kakao.maps.Point(27, 48) }
-            // let markerImage = new window.kakao.maps.MarkerImage(imageSrc, imageSize, imageOption)
+            let imageSrc = 'https://raw.githubusercontent.com/maemesoft/UriJuwiM/master/src/assets/img/marker_pin.png'
+            let imageSize = new window.kakao.maps.Size(48, 48)
+            let imageOption = { offset: new window.kakao.maps.Point(24, 48) }
+            let markerImage = new window.kakao.maps.MarkerImage(imageSrc, imageSize, imageOption)
             let parser = this.wloca
 
             for (let i = 0; i < parser.length; ++i) {
@@ -75,7 +75,8 @@ export default {
 
                     var marker = new window.kakao.maps.Marker({
                         map: this.map,
-                        position: angle
+                        position: angle,
+                        image: markerImage
                     })
                     marker.getMap()
                     if (!i) {
@@ -91,11 +92,16 @@ export default {
                 www.forward(datas[i][0]).then((res) => {
                     let ltlg = res.geometry
                     let geolocation = new window.kakao.maps.LatLng(ltlg.lat, ltlg.lng)
+                    let imageSrc = 'https://raw.githubusercontent.com/maemesoft/UriJuwiM/master/src/assets/img/marker_pin.png'
+                    let imageSize = new window.kakao.maps.Size(48, 48)
+                    let imageOption = { offset: new window.kakao.maps.Point(24, 48) }
+                    let markerImage = new window.kakao.maps.MarkerImage(imageSrc, imageSize, imageOption)
 
                     var marker = new window.kakao.maps.Marker({
                         map: this.map,
                         position: geolocation,
-                        clickable: true
+                        clickable: true,
+                        image: markerImage
                     })
 
                     let thum = '<div><img style="width: 150px; height: 150px" src=' + '\'https://raw.githubusercontent.com/maemesoft/UriJuwiM/master/src/assets/img/thumbnail/' + datas[i][2] + '\'alt="이미지 로드 실패"/><p> ' + datas[i][1] + ' </p></div>'
