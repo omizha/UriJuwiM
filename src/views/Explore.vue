@@ -22,7 +22,7 @@ export default {
             let res = []
             for (let item in Mockup.__collections__.data) {
                 let temp = Mockup.__collections__.data
-                res.push([temp[item].W3W, temp[item].PlaceLocationDescription, temp[item].thumbnail])
+                res.push([temp[item].W3W, temp[item].PlaceLocationDescription, temp[item].thumbnail, item])
             }
             return res
         }

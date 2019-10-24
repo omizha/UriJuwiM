@@ -9,21 +9,7 @@
                 </div>
             </div>
         </el-collapse-transition>
-        <transition name="el-fade-in-linear">
-            <el-row :gutter="4" class='plates' v-show="!placeload">
-                <el-col :span="12" v-for="item in db.data" :key="item.Location" style='float: top'>
-                    <el-card v-bind:data-name="item.Location" @click="routeMove(this)" class="cardBody" shadow="hover" :body-style="{ padding: '12px' }">
-                        <img :src="'https://raw.githubusercontent.com/maemesoft/UriJuwiM/master/src/assets/img/thumbnail/' + item.thumbnail" class="cardImage" v-on:click="switchview(item)">
-                        <div class="cardDescription">
-                            <p class="cardLocation">{{ item.Location }}</p><br>
-                            <IconPlace class="iconPlaceClass"></IconPlace>
-                            <p class="cardAdress">{{ item.Address }}</p>
-                        </div>
-                    </el-card>
-                </el-col>
-                <div class="el-scrollbar__bar is-vertical"></div>
-            </el-row>
-        </transition>
+        <DashLoader v-bind:target="false"></DashLoader>
         <el-collapse-transition>
             <div class="infobox" v-if='placeload'>
                 <intro v-bind:info='selectedplace'></intro>
@@ -37,15 +23,14 @@
 import mock from '../assets/Mockup.json'
 import isabil from '../assets/svg/ic_itsability.svg'
 import intro from '@/components/PlaceIntroduction.vue'
-import IconPlace from '../assets/icon/ic_place_48px.svg'
-import router from '../router/index.js'
+import DashLoader from '../components/DashLoader'
 
 export default {
     name: 'home',
     components: {
+        DashLoader,
         intro,
-        isabil,
-        IconPlace
+        isabil
     },
     data () {
         return {
@@ -65,13 +50,11 @@ export default {
         switchview: function (place) {
             this.selectedplace = place
 
-            let key
-
-            for (key in this.db.data) {
+            for (let key in this.db.data) {
                 console.log(this.db.data[key].Location)
 
                 if (this.db.data[key].Location === this.selectedplace.Location) {
-                    router.push({
+                    this.$router.push({
                         name: 'Dashboard2',
                         params: { cname: key }
                     })
@@ -84,7 +67,7 @@ export default {
 </script>
 
 <style scoped>
-    .upperbox {        
+    .upperbox {
         width : 100%;
         height : 200px;
         top : 0;
@@ -129,41 +112,4 @@ export default {
 
         display : inline;
     }
-
-    .cardBody {
-        height : 280px;
-    }
-
-    .cardImage {
-        height : 180px;
-        width : 180px;
-        object-fit: cover;
-        border-radius: 10%;
-    }
-
-    .cardDescription {
-        display : inline-block;
-        width:180px;
-        height : 60px;
-        text-align: left;
-    }
-
-    .cardDescription > p {
-        display : inline;
-    }
-
-    .cardDescription > .cardLocation {
-        font-size : 18px;
-        font-weight: bold;
-    }
-
-    .cardDescription > .iconPlaceClass {
-        width : 12px;
-        height : 12px;
-    }
-
-    .cardDescription > .cardAdress {
-        font-size : 12px;
-    }
-
 </style>
