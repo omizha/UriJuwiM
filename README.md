@@ -100,9 +100,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>
 JeongHunHa's Email - maemenaver@gmail.com
 
 ## 알려진 버그 (Known Issues)
-### Sometimes maps don't work properly.
-### Occasionally the button will behave abnormally.
-![error](./reference/error.PNG)
+### ~~Sometimes maps don't work properly.~~
+### ~~Occasionally the button will behave abnormally.~~
 
 ## 문제 발생에 대한 해결책 (Troubleshooting)
 Please restart the computer and server, sites.
@@ -118,20 +117,20 @@ link : https://github.com/maemesoft/UriJuwiM/commits/master
 ## 개발 로드맵 (To-do List)
 ### 대시보드
 - [ ] ~~한국관광공사 API 연동~~
-- [ ] 마커 이미지 변경
+- [x] 마커 이미지 변경
 ### 탐험
 - [x] 카카오맵 불러오기
 - [ ] 현재 위치 기능 구현
 - [ ] 마스킹 기능
 - [ ] 정적 이미지
 ### 검색
-- [ ] 지역별 선택 후 맵으로 이동
+- [x] 지역별 선택 후 맵으로 이동
 - [ ] ~~마커 누르면 카드설명 띄우기~~
 ### 공유
 - [ ] 마이크로 SNS 구현
 - [ ] 글추가 및 삭제 구현
 - [ ] 글추가시 사진 업로드, 위치, 시간, 글, 아이디 저장
-- [ ] 로그인 기능 구현
+- [x] 로그인 기능 구현
 ### 기타
 - [x] 인트로 화면 제작
 - [ ] ~~네비게이션 개선~~
