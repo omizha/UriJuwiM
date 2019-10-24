@@ -96,23 +96,23 @@ export default {
             let userRef = db.collection('data').doc('ManagePermission') // .where(this.anone, '==', true)
             let vaildUser = userRef.get()
                 .then((snapshot) => {
-                    return (snapshot.get(this.uid))
+                    return snapshot.get(this.uid)
                 })
                 .catch((err) => {
                     console.log('Error getting documents', err)
                 })
             if (vaildUser) {
-                db.collection('data').get()
-                    .then((snapshot) => {
-                        snapshot.forEach((doc) => {
-                            db.doc('data/' + doc.id).collection('timeline').get()
-                                .then((snap) => {
-                                    snap.forEach((docu) => {
-                                        this.datas.push(docu.data())
-                                        console.log(this.datas)
-                                    })
-                                })
+                db.doc('data/' + this.uid).collection('timeline').get()
+                    .then((snap) => {
+                        if (snap.empty) {
+                            console.log('no doc')
+                        }
+                        snap.forEach((doc) => {
+                            this.datas.push(doc.data())
                         })
+                    })
+                    .catch((err) => {
+                        console.error(err)
                     })
                 this.anone = false
             } else {
@@ -139,13 +139,13 @@ export default {
             }
 
             var storageRef = firebase.storage().ref()
-            let imagename = this.imgbase.substring(23, 40) + '.jpg'
+            let imagename = (this.imgbase.substring(40, 80).split('/')[0]).substr(0, 10) + '.jpg'
             let addchild = storageRef.child(imagename)
 
             if (this.imgbase) {
                 addchild.putString(this.imgbase, 'data_url').then((snap) => {
                     addchild.getDownloadURL().then((urli) => {
-                        db.collection('data').doc(this.uid).collection('timeline').add({
+                        let adder = {
                             Address: '경기도 봉황시 천리마마트',
                             CameraModel: 'Phone',
                             CaptureDate: new Date().toLocaleTimeString(),
@@ -154,7 +154,9 @@ export default {
                             Location: this.location,
                             PhotoLocation: this.area,
                             url: urli
-                        }).then(() => {
+                        }
+                        db.collection('data').doc(this.uid).collection('timeline').add(adder).then(() => {
+                            this.datas.push(adder)
                             this.rotate()
                         })
                     })
