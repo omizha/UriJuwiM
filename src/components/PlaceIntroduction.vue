@@ -60,14 +60,14 @@
                             </el-card>
                         </el-col>
                         <div class="brief">
-                            <el-button class="redBtn" round style="background: #F56C6C; color: #FFFFFF" v-on:click="loadPhotos">촬영정보</el-button>
+                            <el-button v-if="loading" class="redBtn" round style="background: #F56C6C; color: #FFFFFF" v-on:click="loadPhotos">촬영정보</el-button>
                         </div>
                     </div>
                 </div>
             </div>
         </el-collapse-transition>
         <el-collapse-transition>
-            <div class="cameraInfoView" v-show="releasephotos">
+            <div id="cameraInfoView" class="cameraInfoView" v-show="releasephotos">
                 <div v-for="item in info.PhotoDescription" :key="item.url">
                     <el-card class="box-card">
                         <div slot="header" class="clearfix">
@@ -75,12 +75,12 @@
                             <p class="cameraData">{{ item.CameraModel + ' | ' + item.CaptureDate }}</p>
                         </div>
                         <el-image :src="item.url" class="CameraPicture" :preview-src-list="[item.url]"></el-image>
-    <!--                    <p>{{ item.Keyword.split(', ').map((v) => { return '#' + v }) }}</p>-->
+                        <!-- <p>{{ item.Keyword.split(', ').map((v) => { return '#' + v }) }}</p> -->
                         <p style="text-align: left">키워드 : {{ item.Keyword }}</p>
                         <p style="text-align: left">{{ item.Paragraph }}</p>
                     </el-card>
                 </div>
-                <el-button class="redBtn" round style="background: #F56C6C; color: #FFFFFF" v-on:click="loadPhotos">뒤로가기</el-button>
+               <el-button v-if="loading" class="redBtn" round style="background: #F56C6C; color: #FFFFFF" v-on:click="loadPhotos">뒤로가기</el-button>
             </div>
         </el-collapse-transition>
     </div>
@@ -111,7 +111,8 @@ export default {
         return {
             releasephotos: false,
             info: mock.__collections__.data,
-            cname: null
+            cname: null,
+            loading: false
         }
     },
     created () {
@@ -130,6 +131,8 @@ export default {
         www.forward(this.$store.getters.getw3w).then((val) => {
             this.$store.dispatch('updateGeo', val.geometry)
         })
+
+        this.loading = true
     }
 }
 </script>
