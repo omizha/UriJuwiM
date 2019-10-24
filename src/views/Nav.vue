@@ -3,7 +3,7 @@
         el-col(:span="6" v-for="(navKey) in navList" v-bind:key="navKey.id")
             .grid-content
                 router-link(:to="{ name: navKey }")
-                    .navBox {{ navKey }}
+                    .navBox(@click="whatistihs(navKey)") {{ navKey }}
 </template>
 
 <script>
@@ -21,6 +21,11 @@ export default {
     },
     components: {
         iconHome, iconExplore, iconSearch, iconShare
+    },
+    methods: {
+        whatistihs (is) {
+            console.log(is)
+        }
     }
 }
 </script>
@@ -44,16 +49,18 @@ export default {
     cursor: pointer;
     line-height: 60px;
     vertical-align: middle;
+    border-top : 3px solid #FF7E5F
 }
 
 .navBox:hover {
-    background:darkgrey;
+    background-color : #FFb9b0;
 }
 
 a {
     font-size: 18px;
     color : #FF7E5F;
     text-decoration: none !important;
+    font-weight: bolder;
 }
 
 </style>
