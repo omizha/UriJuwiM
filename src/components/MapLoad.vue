@@ -104,19 +104,19 @@ export default {
                         image: markerImage
                     })
 
-                    let thum = '<div><img style="width: 150px; height: 150px" src=' + '\'https://raw.githubusercontent.com/maemesoft/UriJuwiM/master/src/assets/img/thumbnail/' + datas[i][2] + '\'alt="이미지 로드 실패"/><p> ' + datas[i][1] + ' </p></div>'
-                    var infowindow = new window.kakao.maps.InfoWindow({
-                        position: geolocation,
-                        content: thum,
-                        title: datas[i][1],
-                        removable: true
-                    })
+                    // let thum = '<div><img style="width: 150px; height: 150px" src=' + '\'https://raw.githubusercontent.com/maemesoft/UriJuwiM/master/src/assets/img/thumbnail/' + datas[i][2] + '\'alt="이미지 로드 실패"/><p> ' + datas[i][1] + ' </p></div>'
+                    // var infowindow = new window.kakao.maps.InfoWindow({
+                    //     position: geolocation,
+                    //     content: thum,
+                    //     title: datas[i][1],
+                    //     removable: true
+                    // })
 
                     marker.setMap(this.map)
                     var temp = this
                     // 마커에 클릭이벤트를 등록합니다
                     window.kakao.maps.event.addListener(marker, 'click', function () {
-                        console.log(datas[i][3])
+                        // console.log(datas[i][3])
                         temp.$router.push('/dashboard/' + datas[i][3])
                     })
                 })
