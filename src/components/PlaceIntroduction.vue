@@ -211,7 +211,7 @@ export default {
 
 .mapwrapper {
     max-width: 100%;
-    height: 500px;
+    height: 200px;
     border-radius: 5%;
     overflow: hidden;
     margin-bottom : 20px;
