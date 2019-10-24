@@ -17,7 +17,7 @@ import wk from '@/assets/keyw3w.js'
 const www = require('w3w')(wk.key)
 
 export default {
-    props: ['located'],
+    props: ['located', 'entire'],
     data () {
         return {
             appKey: 'ea759f9d1ec7daf12187874b7ad703a4', // 테스트용 appkey
@@ -81,11 +81,62 @@ export default {
                     }
                 })
             }
+        },
+        aroundSeoul () {
+            let datas = this.entireMarkers
+            console.log(datas)
+
+            for (let i = 0; i < datas.length; ++i) {
+                www.forward(datas[i][0]).then((res) => {
+                    let ltlg = res.geometry
+                    let geolocation = new window.kakao.maps.LatLng(ltlg.lat, ltlg.lng)
+
+                    var marker = new window.kakao.maps.Marker({
+                        map: this.map,
+                        position: geolocation,
+                        clickable: true
+                    })
+
+                    let thumbstring = 'https://raw.githubusercontent.com/maemesoft/UriJuwiM/master/src/assets/img/thumbnail/' + datas[i][2]
+                    console.log(thumbstring)
+                    var thum = '<div style="width: 133px; height: 133px"><img :src=thumbstring alt="이미지 로드 실패"/></div>'
+
+                    var infowindow = new window.kakao.maps.InfoWindow({
+                        position: geolocation,
+                        content: thum,
+                        title: datas[i][1],
+                        removable: true
+                    })
+
+                    marker.setMap(this.map)
+                    infowindow.open(this.map, marker)
+                })
+            }
+
+            if (navigator.geolocation) { // GPS를 지원하면
+                navigator.geolocation.getCurrentPosition(function (position) {
+                    this.getLocationData(position.coords.latitude, position.coords.longitude)
+                }, function (error) {
+                    console.error(error)
+                }, { })
+            } else {
+                // Seoul
+                this.getLocationData(75.05733500000002, 200.997985)
+                this.$message.error('GPS를 지원하지 않습니다')
+            }
+
+            this.map.setLevel(9)
         }
     },
     mounted () {
         window.addEventListener('resize', this.onResize)
-        setTimeout(() => { if (this.wloca.length) { this.displayMarker() } }, 330)
+        setTimeout(() => {
+            if (this.wloca) {
+                this.displayMarker()
+            } else {
+                this.aroundSeoul()
+            }
+        }, 470)
     },
     beforeDestroy () {
         window.removeEventListener('resize', this.onResize)
@@ -96,6 +147,9 @@ export default {
         },
         wloca: function () {
             return this.$props.located
+        },
+        entireMarkers: function () {
+            return this.$props.entire
         }
     }
 }
