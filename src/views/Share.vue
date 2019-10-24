@@ -1,5 +1,6 @@
 <template>
     <div>
+        <uppernav></uppernav>
         <div v-if="anone === true">
             <div id="firebaseui-auth-container"></div>
         </div>
@@ -32,6 +33,7 @@ import * as firebaseui from 'firebaseui'
 import * as firebase from 'firebase/app'
 import 'firebase/firestore'
 import config from '@/assets/fireconfig.js'
+import uppernav from '../components/UpperNav.vue'
 
 firebase.initializeApp(config)
 const auth = firebase.auth()
@@ -48,6 +50,9 @@ export default {
             datas: [],
             showit: false
         }
+    },
+    components: {
+        uppernav
     },
     methods: {
         initUI: function () {

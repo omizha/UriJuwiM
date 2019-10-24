@@ -1,16 +1,20 @@
 <template lang="pug">
-    .explore
-        el-button(type="primary", icon="el-icon-search", circle, @click="currentLocation")
-        MapLoad(v-bind:located="false" v-bind:entire="this.markers")
+    .frame
+        uppernav
+        .explore
+            el-button(type="primary", id="findBtn" icon="el-icon-search", circle, @click="currentLocation")
+            MapLoad(v-bind:located="false" v-bind:entire="this.markers")
 </template>
 
 <script>
 import MapLoad from '../components/MapLoad'
 import Mockup from '@/assets/Mockup.json'
+import uppernav from '../components/UpperNav.vue'
 
 export default {
     components: {
-        MapLoad
+        MapLoad,
+        uppernav
     },
     methods: {
         currentLocation () {
@@ -37,12 +41,17 @@ export default {
     height : 100%;
 }
 
-.el-button {
+#findBtn {
     position : fixed;
     z-index : 1000;
     bottom : 100px;
     right : 40px;
     font-size : 48px;
+}
+
+.frame {
+    width : 100%;
+    height : 100%;
 }
 
 </style>
