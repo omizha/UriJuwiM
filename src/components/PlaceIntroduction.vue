@@ -244,9 +244,9 @@ export default {
     padding-top : 8px;
 }
 
-.CameraPicture {
+.CameraPicture > img {
     width : 100%;
-    max-height : 580px;
+    max-height : 500px;
     object-fit: cover;
 
     overflow: hidden;
