@@ -60,7 +60,7 @@
                             </el-card>
                         </el-col>
                         <div class="brief">
-                            <el-button v-if="loading" class="redBtn" round style="background: #F56C6C; color: #FFFFFF" v-on:click="loadPhotos">촬영정보</el-button>
+                            <el-button class="redBtn" round style="background: #F56C6C; color: #FFFFFF" v-on:click="loadPhotos">촬영정보</el-button>
                         </div>
                     </div>
                 </div>
@@ -80,7 +80,7 @@
                         <p style="text-align: left">{{ item.Paragraph }}</p>
                     </el-card>
                 </div>
-               <el-button v-if="loading" class="redBtn" round style="background: #F56C6C; color: #FFFFFF" v-on:click="loadPhotos">뒤로가기</el-button>
+               <el-button class="redBtn" round style="background: #F56C6C; color: #FFFFFF" v-on:click="loadPhotos">뒤로가기</el-button>
             </div>
         </el-collapse-transition>
     </div>
@@ -111,8 +111,7 @@ export default {
         return {
             releasephotos: false,
             info: mock.__collections__.data,
-            cname: null,
-            loading: false
+            cname: null
         }
     },
     created () {
@@ -131,8 +130,6 @@ export default {
         www.forward(this.$store.getters.getw3w).then((val) => {
             this.$store.dispatch('updateGeo', val.geometry)
         })
-
-        this.loading = true
     }
 }
 </script>
@@ -224,11 +221,12 @@ export default {
 }
 
 .redBtn {
+    position : initial !important;
     margin-top : 16px;
     width : 100%;
     height : 56px;
 
-    font-size : 18px;
+    font-size : 18px !important;
 }
 
 .cameraInfoView {
