@@ -46,7 +46,12 @@ export default {
     methods: {
         dashArg: function (word) {
             this.kword = word
-            this.board = !this.board
+            // this.board = !this.board
+
+            this.$router.push({
+                name: 'Search2',
+                params: { location: this.kword }
+            })
         }
     }
 }

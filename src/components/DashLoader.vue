@@ -1,5 +1,6 @@
 <template>
     <div>
+        <Upperbox v-bind:first="header1" v-bind:second="header2" />
         <transition name="el-fade-in-linear">
             <el-row :gutter="4" class='plates' v-show="!placeload">
                 <div v-if="!this.getTarget">
@@ -35,17 +36,24 @@
 <script>
 import IconPlace from '../assets/icon/ic_place_48px.svg'
 import mock from '../assets/Mockup.json'
+import upperbox from '../components/Upperbox.vue'
 
 export default {
-    props: ['target'],
     components: {
-        IconPlace
+        IconPlace,
+        upperbox
     },
     data () {
         return {
             db: mock.__collections__,
-            placeload: false
+            placeload: false,
+            target: null,
+            header1: '당신의 인생샷 스팟',
+            header2: '우리가 찾아줄게요'
         }
+    },
+    created () {
+        this.target = this.$route.params.location
     },
     computed: {
         returnURL (v) {
@@ -53,7 +61,7 @@ export default {
             return '../assets/img/thumbnail/' + v
         },
         getTarget: function () {
-            return this.$props.target
+            return this.$route.params.location
         },
         indexer: function () {
             let res = []
