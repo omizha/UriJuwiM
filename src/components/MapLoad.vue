@@ -97,10 +97,7 @@ export default {
                         clickable: true
                     })
 
-                    let thumbstring = 'https://raw.githubusercontent.com/maemesoft/UriJuwiM/master/src/assets/img/thumbnail/' + datas[i][2]
-                    console.log(thumbstring)
-                    var thum = '<div style="width: 133px; height: 133px"><img :src=thumbstring alt="이미지 로드 실패"/></div>'
-
+                    let thum = '<div><img style="width: 150px; height: 150px" src=' + '\'https://raw.githubusercontent.com/maemesoft/UriJuwiM/master/src/assets/img/thumbnail/' + datas[i][2] + '\'alt="이미지 로드 실패"/><p> ' + datas[i][1] + ' </p></div>'
                     var infowindow = new window.kakao.maps.InfoWindow({
                         position: geolocation,
                         content: thum,
@@ -110,6 +107,11 @@ export default {
 
                     marker.setMap(this.map)
                     infowindow.open(this.map, marker)
+                    // 마커에 클릭이벤트를 등록합니다
+                    window.kakao.maps.event.addListener(marker, 'click', function () {
+                        // 마커 위에 인포윈도우를 표시합니다
+                        infowindow.open(this.map, marker)
+                    })
                 })
             }
 
