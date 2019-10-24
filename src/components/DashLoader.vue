@@ -29,7 +29,7 @@
                 <div class="el-scrollbar__bar is-vertical"></div>
             </el-row>
         </transition>
-        <div v-show="this.indexer">
+        <div v-show="!this.indexer.length">
             <h1>등록된 장소가 없습니다</h1>
             <h3>여행을 통해 숨겨진 인생샷 장소를 찾아보세요!</h3>
         </div>
@@ -96,11 +96,6 @@ export default {
 </script>
 
 <style scoped>
-    .infobox {
-        margin-bottom: 100px;
-        max-height: 10%;
-    }
-
     .cardBody {
         height : 280px;
     }

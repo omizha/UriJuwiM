@@ -20,11 +20,9 @@
 </template>
 
 <script>
-import DashLoad from '@/components/DashLoader.vue'
 import mock from '../assets/Mockup.json'
 import isabil from '../assets/svg/ic_itsability.svg'
 import intro from '@/components/PlaceIntroduction.vue'
-import IconPlace from '../assets/icon/ic_place_48px.svg'
 import DashLoader from '../components/DashLoader'
 
 export default {
@@ -114,41 +112,4 @@ export default {
 
         display : inline;
     }
-
-    .cardBody {
-        height : 280px;
-    }
-
-    .cardImage {
-        height : 180px;
-        width : 180px;
-        object-fit: cover;
-        border-radius: 10%;
-    }
-
-    .cardDescription {
-        display : inline-block;
-        width:180px;
-        height : 60px;
-        text-align: left;
-    }
-
-    .cardDescription > p {
-        display : inline;
-    }
-
-    .cardDescription > .cardLocation {
-        font-size : 18px;
-        font-weight: bold;
-    }
-
-    .cardDescription > .iconPlaceClass {
-        width : 12px;
-        height : 12px;
-    }
-
-    .cardDescription > .cardAdress {
-        font-size : 12px;
-    }
-
 </style>
