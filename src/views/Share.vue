@@ -5,16 +5,15 @@
             <div id="firebaseui-auth-container"></div>
         </div>
         <div v-else style="margin-bottom: 60px">
-            <div>
-                <el-button v-on:click='Logout' style="float: left">로그아웃</el-button>
-                <h1>{{ this.displayName }} 님! 반가워요!</h1>
+            <div class="btnLine">
+                <el-button id="logoutID" v-on:click='Logout'>로그아웃</el-button>
+                <el-button id="writing" round style="background: #def5b8; color: #FFFFFF" v-on:click="rotate" v-show="!showit">글쓰기</el-button>
             </div>
-            <el-button round style="background: #def5b8; color: #FFFFFF" v-on:click="rotate" v-show="!showit">글쓰기</el-button>
                 <div class="cameraInfoView" v-show="!showit">
                     <div v-for="item in this.datas" :key="item.url">
                         <el-card class="box-card">
-                            <div slot="header" class="clearfix">
-                                <h2 class="cameraLocation">{{ item.Location }} {{ item.PhotoLocation }}</h2><br>
+                            <div id="headline" slot="header" class="clearfix">
+                                <p class="cameraLocation">{{ item.Location }} {{ item.PhotoLocation }}</p><br>
                                 <p class="cameraData">{{ item.CameraModel + ' | ' + item.CaptureDate }}</p>
                             </div>
                             <el-image :src="item.url" class="CameraPicture" :preview-src-list="[item.url]"></el-image>
@@ -187,8 +186,6 @@ export default {
             }
         }
     },
-    computed: {
-    },
     created () {
         require('../../node_modules/firebaseui/dist/firebaseui.js')
         require('../../node_modules/firebaseui/dist/firebaseui.css')
@@ -220,4 +217,28 @@ export default {
     .preview {
         max-width: 300px;
     }
+
+    .btnLine {
+        display : inline-block
+    }
+
+    #logoutID {
+        margin-top:30px;
+        margin-right:60px;
+        margin-bottom:20px;
+    }
+
+    #headline > p {
+        display: inline;
+    }
+
+    #headline > p:nth-child(1) {
+        font-size : 32px;
+        font-weight: bold;
+    }
+
+    #headline > p:nth-child(3) {
+        font-size : 14px;
+    }
+
 </style>
