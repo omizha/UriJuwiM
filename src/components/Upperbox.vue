@@ -2,8 +2,8 @@
     <div class="upperbox">
         <isabil id="upbox"/>
         <div class="upperText">
-            <p>{{ this.props.first }}</p><br>
-            <p>{{ this.props.second }}</p>
+            <p>{{ this.$props.first }}</p><br>
+            <p>{{ this.$props.second }}</p>
         </div>
     </div>
 </template>
@@ -13,6 +13,7 @@ import isabil from '../assets/svg/ic_itsability.svg'
 
 export default {
     props: ['first', 'second'],
+    name: 'upperbox',
     components: {
         isabil
     }

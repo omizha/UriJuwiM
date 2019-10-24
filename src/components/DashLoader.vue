@@ -1,6 +1,6 @@
 <template>
     <div>
-        <Upperbox v-bind:first="header1" v-bind:second="header2" />
+        <upperbox v-bind:first="this.$props.header1" v-bind:second="this.$props.header2"></upperbox>
         <transition name="el-fade-in-linear">
             <el-row :gutter="4" class='plates' v-show="!placeload">
                 <div v-if="!this.getTarget">
@@ -39,6 +39,16 @@ import mock from '../assets/Mockup.json'
 import upperbox from '../components/Upperbox.vue'
 
 export default {
+    props: {
+        header1: {
+            type: String,
+            default: '당신의 인생샷 스팟'
+        },
+        header2: {
+            type: String,
+            default: '우리가 찾아줄게요'
+        }
+    },
     components: {
         IconPlace,
         upperbox
@@ -47,9 +57,7 @@ export default {
         return {
             db: mock.__collections__,
             placeload: false,
-            target: null,
-            header1: '당신의 인생샷 스팟',
-            header2: '우리가 찾아줄게요'
+            target: null
         }
     },
     created () {

@@ -1,25 +1,19 @@
 <template>
     <div>
-        <DashLoader v-bind:target="false"></DashLoader>
-        <el-collapse-transition>
-            <div class="infobox" v-if='placeload'>
-                <intro v-bind:info='selectedplace'></intro>
-                <el-button @click="placeload = !placeload">메인화면</el-button>
-            </div>
-        </el-collapse-transition>
+        <DashLoader v-bind:target="false"
+            v-bind:header1="header1"
+            v-bind:header2="header2"></DashLoader>
     </div>
 </template>
 
 <script>
 import mock from '../assets/Mockup.json'
-import intro from '@/components/PlaceIntroduction.vue'
 import DashLoader from '../components/DashLoader.vue'
 
 export default {
     name: 'home',
     components: {
-        DashLoader,
-        intro
+        DashLoader
     },
     data () {
         return {
@@ -27,8 +21,8 @@ export default {
             placeload: false,
             selectedplace: undefined,
             hoverLocation: null,
-            header1: '당신의 인생샷 스팟',
-            header2: '우리가 찾아줄게요'
+            header1: '당신이 찍고싶은',
+            header2: '인생샷을 찾아보세요'
         }
     },
     computed: {
