@@ -52,7 +52,7 @@
         4
       ],
       "no-trailing-spaces": "off",
-      "no-unused-vars": "off"
+      "quotes": ["off", "single"]
     },
     "parserOptions": {
       "parser": "babel-eslint"

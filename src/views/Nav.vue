@@ -24,7 +24,7 @@ export default {
     },
     methods: {
         whatistihs (is) {
-            console.log(is)
+            // console.log(is)
         }
     }
 }

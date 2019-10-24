@@ -67,7 +67,7 @@
             </div>
         </el-collapse-transition>
         <el-collapse-transition>
-            <div class="cameraInfoView" v-show="releasephotos">
+            <div id="cameraInfoView" class="cameraInfoView" v-show="releasephotos">
                 <div v-for="item in info.PhotoDescription" :key="item.url">
                     <el-card class="box-card">
                         <div slot="header" class="clearfix">
@@ -75,12 +75,12 @@
                             <p class="cameraData">{{ item.CameraModel + ' | ' + item.CaptureDate }}</p>
                         </div>
                         <el-image :src="item.url" class="CameraPicture" :preview-src-list="[item.url]"></el-image>
-    <!--                    <p>{{ item.Keyword.split(', ').map((v) => { return '#' + v }) }}</p>-->
+                        <!-- <p>{{ item.Keyword.split(', ').map((v) => { return '#' + v }) }}</p> -->
                         <p style="text-align: left">키워드 : {{ item.Keyword }}</p>
                         <p style="text-align: left">{{ item.Paragraph }}</p>
                     </el-card>
                 </div>
-                <el-button class="redBtn" round style="background: #F56C6C; color: #FFFFFF" v-on:click="loadPhotos">뒤로가기</el-button>
+               <el-button class="redBtn" round style="background: #F56C6C; color: #FFFFFF" v-on:click="loadPhotos">뒤로가기</el-button>
             </div>
         </el-collapse-transition>
     </div>
@@ -221,11 +221,12 @@ export default {
 }
 
 .redBtn {
+    position : initial !important;
     margin-top : 16px;
     width : 100%;
     height : 56px;
 
-    font-size : 18px;
+    font-size : 18px !important;
 }
 
 .cameraInfoView {

@@ -30,6 +30,11 @@ const routes = [
         component: () => import('../views/Search.vue')
     },
     {
+        path: '/search/:location',
+        name: 'Search2',
+        component: () => import('../components/DashLoader.vue')
+    },
+    {
         path: '/share',
         name: 'Share',
         component: () => import('../views/Share.vue')
