@@ -28,6 +28,7 @@ export default {
             currentPosition: { lat: null, lng: null },
             draggable: false,
             scrollwheel: false,
+            currentMarker: null,
 
             latLng: null, // kakao.maps.LatLng
             marker: null, // kakao.maps.Marker
@@ -42,17 +43,29 @@ export default {
             this.map.relayout()
         },
         onLoad (map) {
+            // let thisBind = this
             this.map = map
-            let temp = this
-            if (navigator.geolocation) { // GPS를 지원하면
-                navigator.geolocation.getCurrentPosition(function (position) {
-                    temp.getLocationData(position.coords.latitude, position.coords.longitude)
-                }, function (error) {
-                    console.error(error)
-                }, { })
-            } else {
-                this.$message.error('GPS를 지원하지 않습니다')
-            }
+            // let temp = this
+            // if (navigator.geolocation) { // GPS를 지원하면
+            //     navigator.geolocation.getCurrentPosition(function (position) {
+            //         temp.getLocationData(position.coords.latitude, position.coords.longitude)
+            //     }, function (error) {
+            //         console.error(error)
+            //         if (error.code === 1) {
+            //             thisBind.$message.error({
+            //                 type: 'error',
+            //                 message: '해당 기기에서는 현재위치를 지원하지 않습니다.',
+            //                 offset: 80
+            //             })
+            //         }
+            //     }, { })
+            // } else {
+            //     this.$message.error({
+            //         type: 'error',
+            //         message: 'GPS를 지원하지 않습니다',
+            //         offset: 80
+            //     })
+            // }
         },
         endDrag () {
             console.log({ center: this.center, level: this.level })
@@ -88,6 +101,43 @@ export default {
                     }
                 })
             }
+        },
+        getLocationCurrent () {
+            let thisBind = this
+            if (navigator.geolocation) { // GPS를 지원하면
+                navigator.geolocation.getCurrentPosition(function (position) {
+                    thisBind.getLocationData(position.coords.latitude, position.coords.longitude)
+                    
+                    let locPosition = new window.kakao.maps.LatLng(position.coords.latitude, position.coords.longitude)
+
+                    thisBind.$message({
+                        type: 'success',
+                        message: '현재 위치가 정상적으로 불러졌습니다',
+                        offset: 80
+                    })
+
+                    this.currentMarker = new window.kakao.maps.Marker({  
+                        map: thisBind.map, 
+                        position: locPosition
+                    })
+                }, function (error) {
+                    console.error(error)
+                    if (error.code === 1) {
+                        thisBind.$message.error({
+                            type: 'error',
+                            message: '해당 기기에서는 현재위치를 지원하지 않습니다.',
+                            offset: 80
+                        })
+                    }
+                }, { })
+            } else {
+                thisBind.$message.error({
+                    type: 'error',
+                    message: 'GPS를 지원하지 않습니다',
+                    offset: 80
+                })
+            }
+            this.map.setLevel(3)
         },
         aroundSeoul () {
             let thisBind = this
@@ -132,13 +182,21 @@ export default {
                 }, function (error) {
                     console.error(error)
                     if (error.code === 1) {
-                        thisBind.$message.error('해당 기기에서는 현재위치를 지원하지 않습니다.')
+                        thisBind.$message.error({
+                            type: 'error',
+                            message: '해당 기기에서는 현재위치를 지원하지 않습니다.',
+                            offset: 80
+                        })
                     }
                 }, { })
             } else {
                 // Seoul
                 this.getLocationData(75.05733500000002, 200.997985)
-                thisBind.$message.error('GPS를 지원하지 않습니다')
+                thisBind.$message.error({
+                    type: 'error',
+                    message: 'GPS를 지원하지 않습니다',
+                    offset: 80
+                })
             }
 
             this.map.setLevel(8)
