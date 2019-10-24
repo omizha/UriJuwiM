@@ -78,10 +78,6 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 │      │
 ```
 
-### Theme Color Concept
-![theme_color_1](./reference/theme_color_1.png)
-![theme_color_2](./reference/theme_color_2.png)
-
 ## 저작권 및 사용권 정보 (Copyright / End User License)
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
