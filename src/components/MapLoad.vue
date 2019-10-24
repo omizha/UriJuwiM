@@ -116,7 +116,6 @@ export default {
                     var temp = this
                     // 마커에 클릭이벤트를 등록합니다
                     window.kakao.maps.event.addListener(marker, 'click', function () {
-                        console.log(datas[i][3])
                         temp.$router.push('/dashboard/' + datas[i][3])
                     })
                 })
