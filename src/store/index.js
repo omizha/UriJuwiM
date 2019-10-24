@@ -1,9 +1,11 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
+import createPersistedState from 'vuex-persistedstate'
 
 Vue.use(Vuex)
 
 export default new Vuex.Store({
+    plugins: [createPersistedState()],
     state: {
         addressString: '',
         w3w: '',
@@ -20,8 +22,11 @@ export default new Vuex.Store({
         getw3w: function (state) {
             return state.w3w
         },
-        getKakao: function (state) {
-            return state.mapobj
+        getFire: function (state) {
+            return state.fire
+        },
+        getFireui: function (state) {
+            return state.fireui
         }
     },
     mutations: {
@@ -33,9 +38,6 @@ export default new Vuex.Store({
         },
         setw3w: function (state, words) {
             state.w3w = words
-        },
-        setKakao: function (state, payload) {
-            state.mapobj = payload
         }
     },
     actions: {
@@ -47,9 +49,6 @@ export default new Vuex.Store({
         },
         updatew3w (context, payload) {
             context.commit('setw3w', payload.word)
-        },
-        takeKakaoMap (context, payload) {
-            context.commit('setKakao', payload)
         }
     },
     modules: {

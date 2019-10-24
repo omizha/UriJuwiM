@@ -10,12 +10,15 @@
   "dependencies": {
     "core-js": "^3.1.2",
     "element-ui": "^2.4.5",
+    "firebase": "^7.2.1",
+    "firebaseui": "^4.2.0",
     "load-script-once": "^2.0.1",
     "pug-plain-loader": "^1.0.0",
     "vue": "^2.6.10",
     "vue-daum-map": "^1.0.15",
     "vue-router": "^3.0.6",
     "vuex": "^3.0.1",
+    "vuex-persistedstate": "^2.5.4",
     "w3w": "^0.2.2"
   },
   "devDependencies": {
