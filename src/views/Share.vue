@@ -21,8 +21,8 @@
                 </div>
             <el-button v-on:click='Logout'>로그아웃</el-button>
         </div>
-        <div>
-            <el-textarea class="former"></el-textarea>
+        <div v-show="!showit">
+            <el-form class="former"></el-form>
         </div>
     </div>
 </template>
@@ -75,10 +75,15 @@ export default {
                     console.log('Error getting documents', err)
                 })
             if (vaildUser) {
-                db.doc('data/' + this.uid).collection('timeline').get()
+                db.collection('data').get()
                     .then((snapshot) => {
                         snapshot.forEach((doc) => {
-                            this.datas.push(doc.data())
+                            db.doc('data/' + doc.id).collection('timeline').get()
+                                .then((snap) => {
+                                    snap.forEach((docu) => {
+                                        this.datas.push(docu.data())
+                                    })
+                                })
                         })
                         this.showit = true
                     })
@@ -101,7 +106,7 @@ export default {
             })
         },
         writeSomething: function () {
-
+            this.showit = true
         }
     },
     computed: {
