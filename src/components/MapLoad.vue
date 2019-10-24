@@ -29,6 +29,8 @@ export default {
             draggable: false,
             scrollwheel: false,
             currentMarker: null,
+            currentMarkerArray: [],
+            mapProjection: null,
 
             latLng: null, // kakao.maps.LatLng
             marker: null, // kakao.maps.Marker
@@ -79,6 +81,8 @@ export default {
             this.center = this.currentPosition
         },
         displayMarker () {
+            let thisBind = this
+            
             let imageSrc = 'https://raw.githubusercontent.com/maemesoft/UriJuwiM/master/src/assets/img/marker_pin.png'
             let imageSize = new window.kakao.maps.Size(48, 48)
             let imageOption = { offset: new window.kakao.maps.Point(24, 48) }
@@ -97,12 +101,13 @@ export default {
                     })
                     marker.getMap()
                     if (!i) {
-                        this.getLocationData(geo.lat, geo.lng)
+                        thisBind.getLocationData(geo.lat, geo.lng)
                     }
                 })
             }
         },
         getLocationCurrent () {
+            this.mapProjection = this.map.getProjection()
             let thisBind = this
             if (navigator.geolocation) { // GPS를 지원하면
                 navigator.geolocation.getCurrentPosition(function (position) {
@@ -113,13 +118,26 @@ export default {
                     thisBind.$message({
                         type: 'success',
                         message: '현재 위치가 정상적으로 불러졌습니다',
-                        offset: 80
+                        offset: 80,
+                        duration: 1000
                     })
 
-                    this.currentMarker = new window.kakao.maps.Marker({  
-                        map: thisBind.map, 
-                        position: locPosition
-                    })
+                    thisBind.currentMarkerArray.push(locPosition)
+
+                    if (thisBind.currentMarker != null) {
+                        thisBind.currentMarker.setPosition(locPosition)
+                        if (thisBind.currentMarkerArray[thisBind.currentMarkerArray.length - 2].Ga === 
+                            thisBind.currentMarkerArray[thisBind.currentMarkerArray.length - 1].Ga) {
+                            thisBind.currentMarkerArray.pop()
+                        }
+                    } else {
+                        thisBind.currentMarker = new window.kakao.maps.Marker({  
+                            map: thisBind.map, 
+                            position: locPosition
+                        })
+                    }
+
+                    console.log(thisBind.currentMarkerArray)
                 }, function (error) {
                     console.error(error)
                     if (error.code === 1) {
@@ -129,7 +147,11 @@ export default {
                             offset: 80
                         })
                     }
-                }, { })
+                }, { 
+                    enableHighAccuracy: true, 
+                    maximumAge: 0, 
+                    timeout: 27000
+                })
             } else {
                 thisBind.$message.error({
                     type: 'error',
@@ -137,10 +159,12 @@ export default {
                     offset: 80
                 })
             }
-            this.map.setLevel(3)
+            if (this.map.getLevel() > 3) {
+                this.map.setLevel(3)
+            }
         },
         aroundSeoul () {
-            let thisBind = this
+            // let thisBind = this
             let datas = this.entireMarkers
 
             for (let i = 0; i < datas.length; ++i) {
@@ -176,30 +200,33 @@ export default {
                 })
             }
 
-            if (navigator.geolocation) { // GPS를 지원하면
-                navigator.geolocation.getCurrentPosition(function (position) {
-                    this.getLocationData(position.coords.latitude, position.coords.longitude)
-                }, function (error) {
-                    console.error(error)
-                    if (error.code === 1) {
-                        thisBind.$message.error({
-                            type: 'error',
-                            message: '해당 기기에서는 현재위치를 지원하지 않습니다.',
-                            offset: 80
-                        })
-                    }
-                }, { })
-            } else {
-                // Seoul
-                this.getLocationData(75.05733500000002, 200.997985)
-                thisBind.$message.error({
-                    type: 'error',
-                    message: 'GPS를 지원하지 않습니다',
-                    offset: 80
-                })
-            }
+            // if (navigator.geolocation) { // GPS를 지원하면
+            //     navigator.geolocation.getCurrentPosition(function (position) {
+            //         thisBind.getLocationData(position.coords.latitude, position.coords.longitude)
+            //     }, function (error) {
+            //         console.error(error)
+            //         if (error.code === 1) {
+            //             thisBind.$message.error({
+            //                 type: 'error',
+            //                 message: '해당 기기에서는 현재위치를 지원하지 않습니다.',
+            //                 offset: 80
+            //             })
+            //         }
+            //     }, { })
+            // } else {
+            //     // Seoul
+            //     thisBind.getLocationData(75.05733500000002, 200.997985)
+            //     thisBind.$message.error({
+            //         type: 'error',
+            //         message: 'GPS를 지원하지 않습니다',
+            //         offset: 80
+            //     })
+            // }
 
             this.map.setLevel(8)
+        },
+        getcurrentMarkerArray () {
+            return this.currentMarkerArray
         }
     },
     mounted () {

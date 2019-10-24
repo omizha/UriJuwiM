@@ -1,7 +1,7 @@
 <template lang="pug">
     .frame
         uppernav
-        p5(v-if="drawable" v-show="isAdvanture" class="processing" v-on="{setup, draw, keypressed}")
+        p5(v-if="drawable" ref="p5Ref" v-show="isAdvanture" class="processing" v-on="{setup, draw}")
         .explore
             el-switch(class="boolAdvanture" v-model="isAdvanture")
             el-button(type="primary", id="findBtn" icon="el-icon-search", circle, @click="currentLocation")
@@ -26,22 +26,30 @@ export default {
             drawable: true,
             alphaC: null,
             layer: null,
-            isAdvanture: false
+            isAdvanture: false,
+            mapProjection: null
         }
     },
     methods: {
         setup (v) {
             v.createCanvas(v.windowWidth, v.windowHeight - 120)
             v.fill(0, 230)
-            v.rect(0, 0, v.windowWidth, v.windowHeight)
+            v.rect(-5000, -5000, v.windowWidth + 10000, v.windowHeight + 10000)
         },
         draw (v) {
+            // v.blendMode(v.REPLACE)
+            v.fill(0, 230)
+            // v.push()
             v.fill(255, 255)
-            v.blendMode(v.REMOVE)
-            v.ellipse(v.mouseX, v.mouseY, 50, 50)
-        },
-        keypressed (v) {
-
+            // v.blendMode(v.REMOVE)
+            if (this.$refs.mapRef.currentMarkerArray.length > 0) {
+                // for (let i in this.$refs.mapRef.getcurrentMarkerArray()) {
+                //     v.ellipse(this.$refs.mapRef.mapProjection.containerPointFromCoords(i).x, this.$refs.mapRef.mapProjection.containerPointFromCoords(i).y, 100, 100)
+                //     console.log(this.$refs.mapRef.mapProjection.containerPointFromCoords(i))
+                // }
+            }
+            // v.blendMode(v.REPLACE)
+            // v.pop()
         },
         currentLocation () {
             this.$refs.mapRef.getLocationCurrent()
@@ -69,7 +77,7 @@ export default {
 
 #findBtn {
     position : fixed;
-    z-index : 2;
+    z-index : 99;
     bottom : 100px;
     right : 40px;
     font-size : 48px;

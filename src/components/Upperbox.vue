@@ -31,8 +31,6 @@ export default {
         text-align: right;
         font-size: 28px;
         font-weight: bold;
-
-        margin-bottom : 20px;
     }
     #upbox {
         width: 150px;
