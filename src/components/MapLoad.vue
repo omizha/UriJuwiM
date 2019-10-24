@@ -107,10 +107,11 @@ export default {
 
                     marker.setMap(this.map)
                     infowindow.open(this.map, marker)
+                    var temp = this
                     // 마커에 클릭이벤트를 등록합니다
                     window.kakao.maps.event.addListener(marker, 'click', function () {
                         // 마커 위에 인포윈도우를 표시합니다
-                        infowindow.open(this.map, marker)
+                        infowindow.open(temp.map, marker)
                     })
                 })
             }
