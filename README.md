@@ -126,7 +126,7 @@ link : https://github.com/maemesoft/UriJuwiM/commits/master
 - [ ] 정적 이미지
 ### 검색
 - [ ] 지역별 선택 후 맵으로 이동
-- [ ] 마커 누르면 카드설명 띄우기
+- [ ] ~~마커 누르면 카드설명 띄우기~~
 ### 공유
 - [ ] 마이크로 SNS 구현
 - [ ] 글추가 및 삭제 구현
