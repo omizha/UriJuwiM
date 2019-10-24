@@ -94,7 +94,6 @@ import cloth from '../assets/svg/ic_clothes_48px.svg'
 import IconPlace from '../assets/icon/ic_place_48px.svg'
 import KakaoMap from '../components/MapLoad'
 import wk from '@/assets/keyw3w.js'
-import router from '../router/index.js'
 import mock from '../assets/Mockup.json'
 const www = require('w3w')(wk.key)
 
