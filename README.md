@@ -144,3 +144,17 @@ link : https://github.com/maemesoft/UriJuwiM/commits/master
 - [x] PPT 제작
 - [x] 백엔드 명세서 제작
 - [x] Github README.md 제작
+
+## 기타 참고자료
+<img src="https://raw.githubusercontent.com/osam2019/WEB_UrijuwiM_Team/master/reference/%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%93%9C1.PNG"></img>
+<img src="https://raw.githubusercontent.com/osam2019/WEB_UrijuwiM_Team/master/reference/%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%93%9C2.PNG"></img>
+<img src="https://raw.githubusercontent.com/osam2019/WEB_UrijuwiM_Team/master/reference/%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%93%9C3.PNG"></img>
+<img src="https://raw.githubusercontent.com/osam2019/WEB_UrijuwiM_Team/master/reference/%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%93%9C4.PNG"></img>
+<img src="https://raw.githubusercontent.com/osam2019/WEB_UrijuwiM_Team/master/reference/%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%93%9C5.PNG"></img>
+<img src="https://raw.githubusercontent.com/osam2019/WEB_UrijuwiM_Team/master/reference/%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%93%9C6.PNG"></img>
+<img src="https://raw.githubusercontent.com/osam2019/WEB_UrijuwiM_Team/master/reference/%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%93%9C7.PNG"></img>
+<img src="https://raw.githubusercontent.com/osam2019/WEB_UrijuwiM_Team/master/reference/%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%93%9C8.PNG"></img>
+<img src="https://raw.githubusercontent.com/osam2019/WEB_UrijuwiM_Team/master/reference/%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%93%9C9.PNG"></img>
+<img src="https://raw.githubusercontent.com/osam2019/WEB_UrijuwiM_Team/master/reference/%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%93%9C10.PNG"></img>
+<img src="https://raw.githubusercontent.com/osam2019/WEB_UrijuwiM_Team/master/reference/%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%93%9C11.PNG"></img>
+<img src="https://raw.githubusercontent.com/osam2019/WEB_UrijuwiM_Team/master/reference/%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%93%9C12.PNG"></img>
