@@ -77,6 +77,11 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 │      │      Share.vue     //  './share'
 │      │
 ```
+![1](./reference/itsability Back-End 명세서 - 수정-001-001.jpg)
+![2](./reference/itsability Back-End 명세서 - 수정-002-002.jpg)
+![3](./reference/itsability Back-End 명세서 - 수정-003-003.jpg)
+![4](./reference/itsability Back-End 명세서 - 수정-004-004.jpg)
+
 
 ## 저작권 및 사용권 정보 (Copyright / End User License)
 This program is free software: you can redistribute it and/or modify
@@ -122,7 +127,7 @@ link : https://github.com/maemesoft/UriJuwiM/commits/master
 - [x] 카카오맵 불러오기
 - [x] 현재 위치 기능 구현
 - [x] 마스킹 기능
-- [ ] 정적 이미지
+- [ ] ~~정적 이미지~~
 ### 검색
 - [x] 지역별 선택 후 맵으로 이동
 - [ ] ~~마커 누르면 카드설명 띄우기~~
