@@ -77,10 +77,9 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 │      │      Share.vue     //  './share'
 │      │
 ```
-![1](./reference/itsability Back-End 명세서 - 수정-001-001.jpg)
-![2](./reference/itsability Back-End 명세서 - 수정-002-002.jpg)
-![3](./reference/itsability Back-End 명세서 - 수정-003-003.jpg)
-![4](./reference/itsability Back-End 명세서 - 수정-004-004.jpg)
+<img src="https://raw.githubusercontent.com/osam2019/WEB_UrijuwiM_Team/master/reference/itsability%20Back-End%20%EB%AA%85%EC%84%B8%EC%84%9C%20-%20%EC%88%98%EC%A0%95-001-001.jpg"></img>
+<img src="https://raw.githubusercontent.com/osam2019/WEB_UrijuwiM_Team/master/reference/itsability%20Back-End%20%EB%AA%85%EC%84%B8%EC%84%9C%20-%20%EC%88%98%EC%A0%95-002-002.jpg"></img><img src="https://raw.githubusercontent.com/osam2019/WEB_UrijuwiM_Team/master/reference/itsability%20Back-End%20%EB%AA%85%EC%84%B8%EC%84%9C%20-%20%EC%88%98%EC%A0%95-003-003.jpg"></img>
+<img src="https://raw.githubusercontent.com/osam2019/WEB_UrijuwiM_Team/master/reference/itsability%20Back-End%20%EB%AA%85%EC%84%B8%EC%84%9C%20-%20%EC%88%98%EC%A0%95-004-004.jpg"></img>
 
 
 ## 저작권 및 사용권 정보 (Copyright / End User License)
@@ -102,7 +101,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="크리에이티브 커먼즈 라이선스" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a><br />이 저작물은 <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">크리에이티브 커먼즈 저작자표시-비영리-변경금지 4.0 국제 라이선스</a>에 따라 이용할 수 있습니다.
 
 ## 배포자 및 개발자의 연락처 정보 (Contact Information)
-JeongHunHa's Email - maemenaver@gmail.com
+일병 하정훈 - maemenaver@gmail.com
+일병 최호경
 
 ## 알려진 버그 (Known Issues)
 ### ~~Sometimes maps don't work properly.~~
