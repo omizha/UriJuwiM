@@ -78,7 +78,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 │      │
 ```
 <img src="https://raw.githubusercontent.com/osam2019/WEB_UrijuwiM_Team/master/reference/itsability%20Back-End%20%EB%AA%85%EC%84%B8%EC%84%9C%20-%20%EC%88%98%EC%A0%95-001-001.jpg"></img>
-<img src="https://raw.githubusercontent.com/osam2019/WEB_UrijuwiM_Team/master/reference/itsability%20Back-End%20%EB%AA%85%EC%84%B8%EC%84%9C%20-%20%EC%88%98%EC%A0%95-002-002.jpg"></img><img src="https://raw.githubusercontent.com/osam2019/WEB_UrijuwiM_Team/master/reference/itsability%20Back-End%20%EB%AA%85%EC%84%B8%EC%84%9C%20-%20%EC%88%98%EC%A0%95-003-003.jpg"></img>
+<img src="https://raw.githubusercontent.com/osam2019/WEB_UrijuwiM_Team/master/reference/itsability%20Back-End%20%EB%AA%85%EC%84%B8%EC%84%9C%20-%20%EC%88%98%EC%A0%95-003-003.jpg"></img>
 <img src="https://raw.githubusercontent.com/osam2019/WEB_UrijuwiM_Team/master/reference/itsability%20Back-End%20%EB%AA%85%EC%84%B8%EC%84%9C%20-%20%EC%88%98%EC%A0%95-004-004.jpg"></img>
 
 
@@ -133,7 +133,8 @@ link : https://github.com/maemesoft/UriJuwiM/commits/master
 - [ ] ~~마커 누르면 카드설명 띄우기~~
 ### 공유
 - [x] 마이크로 SNS 구현
-- [ ] 글추가 및 삭제 구현
+- [X] 글추가 구현
+- [ ] 글삭제 구현
 - [ ] 글추가시 사진 업로드, 위치, 시간, 글, 아이디 저장
 - [x] 로그인 기능 구현
 ### 기타
