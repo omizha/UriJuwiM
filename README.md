@@ -77,6 +77,10 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 │      │      Share.vue     //  './share'
 │      │
 ```
+<img src="https://raw.githubusercontent.com/osam2019/WEB_UrijuwiM_Team/master/reference/itsability%20Back-End%20%EB%AA%85%EC%84%B8%EC%84%9C%20-%20%EC%88%98%EC%A0%95-001-001.jpg"></img>
+<img src="https://raw.githubusercontent.com/osam2019/WEB_UrijuwiM_Team/master/reference/itsability%20Back-End%20%EB%AA%85%EC%84%B8%EC%84%9C%20-%20%EC%88%98%EC%A0%95-003-003.jpg"></img>
+<img src="https://raw.githubusercontent.com/osam2019/WEB_UrijuwiM_Team/master/reference/itsability%20Back-End%20%EB%AA%85%EC%84%B8%EC%84%9C%20-%20%EC%88%98%EC%A0%95-004-004.jpg"></img>
+
 
 ## 저작권 및 사용권 정보 (Copyright / End User License)
 This program is free software: you can redistribute it and/or modify
@@ -97,7 +101,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="크리에이티브 커먼즈 라이선스" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a><br />이 저작물은 <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">크리에이티브 커먼즈 저작자표시-비영리-변경금지 4.0 국제 라이선스</a>에 따라 이용할 수 있습니다.
 
 ## 배포자 및 개발자의 연락처 정보 (Contact Information)
-JeongHunHa's Email - maemenaver@gmail.com
+일병 하정훈 - maemenaver@gmail.com<br>
+일병 최호경
 
 ## 알려진 버그 (Known Issues)
 ### ~~Sometimes maps don't work properly.~~
@@ -120,22 +125,37 @@ link : https://github.com/maemesoft/UriJuwiM/commits/master
 - [x] 마커 이미지 변경
 ### 탐험
 - [x] 카카오맵 불러오기
-- [ ] 현재 위치 기능 구현
-- [ ] 마스킹 기능
-- [ ] 정적 이미지
+- [x] 현재 위치 기능 구현
+- [x] 마스킹 기능
+- [ ] ~~정적 이미지~~
 ### 검색
 - [x] 지역별 선택 후 맵으로 이동
 - [ ] ~~마커 누르면 카드설명 띄우기~~
 ### 공유
-- [ ] 마이크로 SNS 구현
-- [ ] 글추가 및 삭제 구현
+- [x] 마이크로 SNS 구현
+- [X] 글추가 구현
+- [ ] 글삭제 구현
 - [ ] 글추가시 사진 업로드, 위치, 시간, 글, 아이디 저장
 - [x] 로그인 기능 구현
 ### 기타
 - [x] 인트로 화면 제작
 - [ ] ~~네비게이션 개선~~
 ### 문서 작성
-- [ ] 개발문서 제작
-- [ ] PPT 제작
-- [ ] 백엔드 명세서 제작
+- [x] 개발문서 제작
+- [x] PPT 제작
+- [x] 백엔드 명세서 제작
 - [x] Github README.md 제작
+
+## 기타 참고자료
+<img src="https://raw.githubusercontent.com/osam2019/WEB_UrijuwiM_Team/master/reference/%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%93%9C1.PNG"></img>
+<img src="https://raw.githubusercontent.com/osam2019/WEB_UrijuwiM_Team/master/reference/%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%93%9C2.PNG"></img>
+<img src="https://raw.githubusercontent.com/osam2019/WEB_UrijuwiM_Team/master/reference/%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%93%9C3.PNG"></img>
+<img src="https://raw.githubusercontent.com/osam2019/WEB_UrijuwiM_Team/master/reference/%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%93%9C4.PNG"></img>
+<img src="https://raw.githubusercontent.com/osam2019/WEB_UrijuwiM_Team/master/reference/%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%93%9C5.PNG"></img>
+<img src="https://raw.githubusercontent.com/osam2019/WEB_UrijuwiM_Team/master/reference/%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%93%9C6.PNG"></img>
+<img src="https://raw.githubusercontent.com/osam2019/WEB_UrijuwiM_Team/master/reference/%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%93%9C7.PNG"></img>
+<img src="https://raw.githubusercontent.com/osam2019/WEB_UrijuwiM_Team/master/reference/%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%93%9C8.PNG"></img>
+<img src="https://raw.githubusercontent.com/osam2019/WEB_UrijuwiM_Team/master/reference/%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%93%9C9.PNG"></img>
+<img src="https://raw.githubusercontent.com/osam2019/WEB_UrijuwiM_Team/master/reference/%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%93%9C10.PNG"></img>
+<img src="https://raw.githubusercontent.com/osam2019/WEB_UrijuwiM_Team/master/reference/%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%93%9C11.PNG"></img>
+<img src="https://raw.githubusercontent.com/osam2019/WEB_UrijuwiM_Team/master/reference/%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%93%9C12.PNG"></img>
